@@ -1,0 +1,48 @@
+
+==============NVSMI LOG==============
+
+Timestamp                                 : Wed Jul 14 15:36:16 2021
+Driver Version                            : 465.19.01
+CUDA Version                              : 11.3
+
+Attached GPUs                             : 4
+GPU 00000000:05:00.0
+    Temperature
+        GPU Current Temp                  : 24 C
+        GPU Shutdown Temp                 : 96 C
+        GPU Slowdown Temp                 : 93 C
+        GPU Max Operating Temp            : N/A
+        GPU Target Temperature            : 84 C
+        Memory Current Temp               : N/A
+        Memory Max Operating Temp         : N/A
+
+GPU 00000000:06:00.0
+    Temperature
+        GPU Current Temp                  : 24 C
+        GPU Shutdown Temp                 : 96 C
+        GPU Slowdown Temp                 : 93 C
+        GPU Max Operating Temp            : N/A
+        GPU Target Temperature            : 84 C
+        Memory Current Temp               : N/A
+        Memory Max Operating Temp         : N/A
+
+GPU 00000000:09:00.0
+    Temperature
+        GPU Current Temp                  : 24 C
+        GPU Shutdown Temp                 : 96 C
+        GPU Slowdown Temp                 : 93 C
+        GPU Max Operating Temp            : N/A
+        GPU Target Temperature            : 84 C
+        Memory Current Temp               : N/A
+        Memory Max Operating Temp         : N/A
+
+GPU 00000000:0A:00.0
+    Temperature
+        GPU Current Temp                  : 33 C
+        GPU Shutdown Temp                 : 96 C
+        GPU Slowdown Temp                 : 93 C
+        GPU Max Operating Temp            : N/A
+        GPU Target Temperature            : 84 C
+        Memory Current Temp               : N/A
+        Memory Max Operating Temp         : N/A
+

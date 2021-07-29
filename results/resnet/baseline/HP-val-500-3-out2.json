@@ -1,0 +1,31 @@
+{
+    "model": "",
+    "ngpus": [
+        4
+    ],
+    "bs": [
+        128
+    ],
+    "metric_keys": [
+        "val.ips",
+        "val.latency_avg",
+        "val.latency_50",
+        "val.latency_90",
+        "val.latency_95",
+        "val.latency_99",
+        "val.latency_100"
+    ],
+    "metrics": {
+        "4": {
+            "128": {
+                "val.ips": 1722.08104761152,
+                "val.latency_avg": 0.2973146941661835,
+                "val.latency_50": 0.2927277684211731,
+                "val.latency_90": 0.3384112358093262,
+                "val.latency_95": 0.35531818866729736,
+                "val.latency_99": 0.3927802002429962,
+                "val.latency_100": 0.4657081365585327
+            }
+        }
+    }
+}

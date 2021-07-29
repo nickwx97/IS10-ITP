@@ -1,0 +1,1122 @@
+Beginning trial 4 of 5
+Clearing caches
+Argument expected for the -c option
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+Launching on node oem-All-Series
++ pids+=($!)
++ set +x
+++ eval echo
++++ echo
++ docker exec -e DGXSYSTEM=DGX1 -e 'MULTI_NODE= --master_port=4782' -e SLURM_JOB_ID=210707115804041603675 -e SLURM_NTASKS_PER_NODE= cont_210707115804041603675 ./run_and_time.sh
+Run vars: id 210707115804041603675 gpus 4 mparams  --master_port=4782
++ NUMEPOCHS=70
++ LR=2.5e-3
++ echo 'running benchmark'
++ export DATASET_DIR=/data/coco2017
++ DATASET_DIR=/data/coco2017
+STARTING TIMING RUN AT 2021-07-08 04:00:02 PM
+running benchmark
++ export TORCH_MODEL_ZOO=/data/torchvision
++ TORCH_MODEL_ZOO=/data/torchvision
++ python -m bind_launch --nsockets_per_node 1 --ncores_per_socket 6 --nproc_per_node 4 --master_port=4782 train.py --epochs 70 --warmup-factor 0 --lr 2.5e-3 --no-save --threshold=0.23 --data /data/coco2017 --batch-size 32 --pretrained-backbone resnet34-333f7ec4.pth
+:::MLLOG {"namespace": "", "time_ms": 1625774404444, "event_type": "INTERVAL_START", "key": "init_start", "value": null, "metadata": {"file": "train.py", "lineno": 409}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404489, "event_type": "INTERVAL_END", "key": "init_stop", "value": null, "metadata": {"file": "train.py", "lineno": 419}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404489, "event_type": "INTERVAL_START", "key": "run_start", "value": null, "metadata": {"file": "train.py", "lineno": 420}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404444, "event_type": "INTERVAL_START", "key": "init_start", "value": null, "metadata": {"file": "train.py", "lineno": 409}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404494, "event_type": "INTERVAL_END", "key": "init_stop", "value": null, "metadata": {"file": "train.py", "lineno": 419}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404494, "event_type": "INTERVAL_START", "key": "run_start", "value": null, "metadata": {"file": "train.py", "lineno": 420}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404585, "event_type": "INTERVAL_START", "key": "init_start", "value": null, "metadata": {"file": "train.py", "lineno": 409}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404645, "event_type": "INTERVAL_END", "key": "init_stop", "value": null, "metadata": {"file": "train.py", "lineno": 419}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404570, "event_type": "INTERVAL_START", "key": "init_start", "value": null, "metadata": {"file": "train.py", "lineno": 409}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404646, "event_type": "INTERVAL_START", "key": "run_start", "value": null, "metadata": {"file": "train.py", "lineno": 420}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404647, "event_type": "INTERVAL_END", "key": "init_stop", "value": null, "metadata": {"file": "train.py", "lineno": 419}}
+:::MLLOG {"namespace": "", "time_ms": 1625774404647, "event_type": "INTERVAL_START", "key": "run_start", "value": null, "metadata": {"file": "train.py", "lineno": 420}}
+Warning:  apex was installed without --cuda_ext. Fused syncbn kernels will be unavailable.  Python fallbacks will be used instead.Warning:  apex was installed without --cuda_ext. Fused syncbn kernels will be unavailable.  Python fallbacks will be used instead.
+Warning:  apex was installed without --cuda_ext.  FusedAdam will be unavailable.
+Warning:  apex was installed without --cuda_ext.  FusedAdam will be unavailable.
+Warning:  apex was installed without --cuda_ext.  FusedLayerNorm will be unavailable.
+Warning:  apex was installed without --cuda_ext.  FusedLayerNorm will be unavailable.
+Warning:  apex was installed without --cuda_ext. Fused syncbn kernels will be unavailable.  Python fallbacks will be used instead.
+Warning:  apex was installed without --cuda_ext. Fused syncbn kernels will be unavailable.  Python fallbacks will be used instead.
+Warning:  apex was installed without --cuda_ext.  FusedAdam will be unavailable.
+Warning:  apex was installed without --cuda_ext.  FusedAdam will be unavailable.
+Warning:  apex was installed without --cuda_ext.  FusedLayerNorm will be unavailable.
+Warning:  apex was installed without --cuda_ext.  FusedLayerNorm will be unavailable.
+:::MLLOG {"namespace": "", "time_ms": 1625774408954, "event_type": "POINT_IN_TIME", "key": "seed", "value": 3942446115, "metadata": {"file": "train.py", "lineno": 214}}
+:::MLLOG {"namespace": "", "time_ms": 1625774408954, "event_type": "POINT_IN_TIME", "key": "seed", "value": 3942446114, "metadata": {"file": "train.py", "lineno": 214}}
+args.rank = 1
+local rank = 1
+distributed=True
+args.rank = 0
+local rank = 0
+distributed=True
+:::MLLOG {"namespace": "", "time_ms": 1625774408954, "event_type": "POINT_IN_TIME", "key": "seed", "value": 3942446117, "metadata": {"file": "train.py", "lineno": 214}}
+args.rank = 3
+local rank = 3
+distributed=True
+:::MLLOG {"namespace": "", "time_ms": 1625774408954, "event_type": "POINT_IN_TIME", "key": "seed", "value": 3942446116, "metadata": {"file": "train.py", "lineno": 214}}
+args.rank = 2
+local rank = 2
+distributed=True
+loading annotations into memory...
+loading annotations into memory...loading annotations into memory...
+:::MLLOG {"namespace": "", "time_ms": 1625774408970, "event_type": "POINT_IN_TIME", "key": "max_samples", "value": 1, "metadata": {"file": "utils.py", "lineno": 308}}
+:::MLLOG {"namespace": "", "time_ms": 1625774408970, "event_type": "POINT_IN_TIME", "key": "max_samples", "value": 1, "metadata": {"file": "utils.py", "lineno": 308}}
+loading annotations into memory...
+Done (t=0.48s)
+creating index...
+Done (t=0.49s)
+creating index...
+Done (t=0.50s)
+creating index...
+index created!
+index created!
+index created!
+Done (t=0.60s)
+creating index...
+index created!
+:::MLLOG {"namespace": "", "time_ms": 1625774426554, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 117266, "metadata": {"file": "train.py", "lineno": 239}}
+:::MLLOG {"namespace": "", "time_ms": 1625774426554, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 4952, "metadata": {"file": "train.py", "lineno": 240}}
+:::MLLOG {"namespace": "", "time_ms": 1625774426601, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 117266, "metadata": {"file": "train.py", "lineno": 239}}
+:::MLLOG {"namespace": "", "time_ms": 1625774426601, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 4952, "metadata": {"file": "train.py", "lineno": 240}}
+:::MLLOG {"namespace": "", "time_ms": 1625774426698, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 117266, "metadata": {"file": "train.py", "lineno": 239}}
+:::MLLOG {"namespace": "", "time_ms": 1625774426698, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 4952, "metadata": {"file": "train.py", "lineno": 240}}
+/opt/conda/lib/python3.7/site-packages/torch/nn/_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+/opt/conda/lib/python3.7/site-packages/torch/nn/_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+/opt/conda/lib/python3.7/site-packages/torch/nn/_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+:::MLLOG {"namespace": "", "time_ms": 1625774427562, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": 128, "metadata": {"file": "train.py", "lineno": 282}}
+:::MLLOG {"namespace": "", "time_ms": 1625774427562, "event_type": "POINT_IN_TIME", "key": "model_bn_span", "value": 32, "metadata": {"file": "train.py", "lineno": 284}}
+:::MLLOG {"namespace": "", "time_ms": 1625774427563, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": 128, "metadata": {"file": "train.py", "lineno": 282}}
+:::MLLOG {"namespace": "", "time_ms": 1625774427563, "event_type": "POINT_IN_TIME", "key": "model_bn_span", "value": 32, "metadata": {"file": "train.py", "lineno": 284}}
+:::MLLOG {"namespace": "", "time_ms": 1625774427564, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": 128, "metadata": {"file": "train.py", "lineno": 282}}
+:::MLLOG {"namespace": "", "time_ms": 1625774427564, "event_type": "POINT_IN_TIME", "key": "model_bn_span", "value": 32, "metadata": {"file": "train.py", "lineno": 284}}
+:::MLLOG {"namespace": "", "time_ms": 1625774428740, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 117266, "metadata": {"file": "train.py", "lineno": 239}}
+:::MLLOG {"namespace": "", "time_ms": 1625774428740, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 4952, "metadata": {"file": "train.py", "lineno": 240}}
+/opt/conda/lib/python3.7/site-packages/torch/nn/_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+:::MLLOG {"namespace": "", "time_ms": 1625774429514, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": 128, "metadata": {"file": "train.py", "lineno": 282}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429514, "event_type": "POINT_IN_TIME", "key": "model_bn_span", "value": 32, "metadata": {"file": "train.py", "lineno": 284}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429830, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.01, "metadata": {"file": "train.py", "lineno": 296}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429831, "event_type": "POINT_IN_TIME", "key": "opt_weight_decay", "value": 0.0005, "metadata": {"file": "train.py", "lineno": 297}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429831, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0, "metadata": {"file": "train.py", "lineno": 315}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429831, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_decay_boundary_epochs", "value": [40, 50], "metadata": {"file": "train.py", "lineno": 316}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429831, "event_type": "INTERVAL_START", "key": "block_start", "value": null, "metadata": {"file": "train.py", "lineno": 320, "first_epoch_num": 1, "epoch_count": 70}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429831, "event_type": "INTERVAL_START", "key": "block_start", "value": null, "metadata": {"file": "train.py", "lineno": 320, "first_epoch_num": 1, "epoch_count": 70}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429831, "event_type": "INTERVAL_START", "key": "block_start", "value": null, "metadata": {"file": "train.py", "lineno": 320, "first_epoch_num": 1, "epoch_count": 70}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429831, "event_type": "INTERVAL_START", "key": "block_start", "value": null, "metadata": {"file": "train.py", "lineno": 320, "first_epoch_num": 1, "epoch_count": 70}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429831, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 0}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429832, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 0}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429832, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 0}}
+:::MLLOG {"namespace": "", "time_ms": 1625774429832, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 0}}
+Iteration:      0, Loss function: 22.307, Average Loss: 0.022
+Iteration:    100, Loss function: 8.779, Average Loss: 1.218
+Iteration:    200, Loss function: 8.107, Average Loss: 1.916
+Iteration:    300, Loss function: 7.993, Average Loss: 2.508
+Iteration:    400, Loss function: 6.986, Average Loss: 3.001
+Iteration:    500, Loss function: 7.627, Average Loss: 3.425
+Iteration:    600, Loss function: 7.031, Average Loss: 3.792
+Iteration:    700, Loss function: 7.012, Average Loss: 4.105
+Iteration:    800, Loss function: 6.988, Average Loss: 4.369
+Iteration:    900, Loss function: 6.517, Average Loss: 4.601
+:::MLLOG {"namespace": "", "time_ms": 1625775251741, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 1}}
+:::MLLOG {"namespace": "", "time_ms": 1625775251745, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 1}}
+:::MLLOG {"namespace": "", "time_ms": 1625775251746, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 1}}
+:::MLLOG {"namespace": "", "time_ms": 1625775251748, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 1}}
+Iteration:   1000, Loss function: 6.729, Average Loss: 4.796
+Iteration:   1100, Loss function: 6.295, Average Loss: 4.958
+Iteration:   1200, Loss function: 6.423, Average Loss: 5.092
+Iteration:   1300, Loss function: 6.467, Average Loss: 5.205
+Iteration:   1400, Loss function: 6.218, Average Loss: 5.299
+Iteration:   1500, Loss function: 5.828, Average Loss: 5.375
+Iteration:   1600, Loss function: 5.229, Average Loss: 5.435
+Iteration:   1700, Loss function: 6.020, Average Loss: 5.488
+Iteration:   1800, Loss function: 5.683, Average Loss: 5.524
+:::MLLOG {"namespace": "", "time_ms": 1625776067814, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1625776067825, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1625776067830, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1625776067833, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 2}}
+Iteration:   1900, Loss function: 5.792, Average Loss: 5.546
+Iteration:   2000, Loss function: 5.503, Average Loss: 5.561
+Iteration:   2100, Loss function: 5.230, Average Loss: 5.574
+Iteration:   2200, Loss function: 5.210, Average Loss: 5.578
+Iteration:   2300, Loss function: 5.765, Average Loss: 5.581
+Iteration:   2400, Loss function: 5.928, Average Loss: 5.579
+Iteration:   2500, Loss function: 5.336, Average Loss: 5.573
+Iteration:   2600, Loss function: 5.908, Average Loss: 5.568
+Iteration:   2700, Loss function: 6.008, Average Loss: 5.556
+:::MLLOG {"namespace": "", "time_ms": 1625776885134, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 3}}
+:::MLLOG {"namespace": "", "time_ms": 1625776885144, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 3}}
+:::MLLOG {"namespace": "", "time_ms": 1625776885144, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 3}}
+:::MLLOG {"namespace": "", "time_ms": 1625776885151, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 3}}
+Iteration:   2800, Loss function: 5.892, Average Loss: 5.540
+Iteration:   2900, Loss function: 5.390, Average Loss: 5.520
+Iteration:   3000, Loss function: 6.015, Average Loss: 5.505
+Iteration:   3100, Loss function: 5.250, Average Loss: 5.485
+Iteration:   3200, Loss function: 4.884, Average Loss: 5.466
+Iteration:   3300, Loss function: 5.216, Average Loss: 5.446
+Iteration:   3400, Loss function: 5.651, Average Loss: 5.430
+Iteration:   3500, Loss function: 5.144, Average Loss: 5.405
+Iteration:   3600, Loss function: 5.018, Average Loss: 5.388
+:::MLLOG {"namespace": "", "time_ms": 1625777698099, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1625777698100, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1625777698107, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1625777698109, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 4}}
+Iteration:   3700, Loss function: 4.753, Average Loss: 5.370
+Iteration:   3800, Loss function: 4.891, Average Loss: 5.345
+Iteration:   3900, Loss function: 5.071, Average Loss: 5.327
+Iteration:   4000, Loss function: 5.317, Average Loss: 5.309
+Iteration:   4100, Loss function: 5.186, Average Loss: 5.291
+Iteration:   4200, Loss function: 4.888, Average Loss: 5.273
+Iteration:   4300, Loss function: 5.957, Average Loss: 5.250
+Iteration:   4400, Loss function: 5.249, Average Loss: 5.228
+Iteration:   4500, Loss function: 4.789, Average Loss: 5.211
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625778516239, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 5}}
+Completed inference on batch: 100
+Predicting Ended, total time: 331.25 s
+Loading and preparing results...
+Converting ndarray to lists...
+(462744, 7)
+0/462744
+DONE (t=4.67s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=49.95s).
+Accumulating evaluation results...
+DONE (t=6.77s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.094
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.196
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.079
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.021
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.103
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.146
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.126
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.185
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.196
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.043
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.193
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.298
+Current AP: 0.09410 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625778909549, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.09409860425972258, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 5}}
+:::MLLOG {"namespace": "", "time_ms": 1625778909549, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 5}}
+:::MLLOG {"namespace": "", "time_ms": 1625778910733, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1625778910733, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1625778910733, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1625778910733, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1625778910733, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 5}}
+:::MLLOG {"namespace": "", "time_ms": 1625778910734, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 5}}
+:::MLLOG {"namespace": "", "time_ms": 1625778910734, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 5}}
+:::MLLOG {"namespace": "", "time_ms": 1625778910734, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 5}}
+Iteration:   4600, Loss function: 5.519, Average Loss: 5.197
+Iteration:   4700, Loss function: 5.223, Average Loss: 5.177
+Iteration:   4800, Loss function: 4.915, Average Loss: 5.152
+Iteration:   4900, Loss function: 5.008, Average Loss: 5.137
+Iteration:   5000, Loss function: 5.319, Average Loss: 5.117
+Iteration:   5100, Loss function: 4.440, Average Loss: 5.096
+Iteration:   5200, Loss function: 4.633, Average Loss: 5.083
+Iteration:   5300, Loss function: 5.549, Average Loss: 5.070
+Iteration:   5400, Loss function: 4.820, Average Loss: 5.054
+Iteration:   5500, Loss function: 4.682, Average Loss: 5.044
+:::MLLOG {"namespace": "", "time_ms": 1625779722952, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1625779722968, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1625779723006, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1625779723013, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 6}}
+Iteration:   5600, Loss function: 5.293, Average Loss: 5.027
+Iteration:   5700, Loss function: 4.653, Average Loss: 5.010
+Iteration:   5800, Loss function: 5.233, Average Loss: 4.993
+Iteration:   5900, Loss function: 4.629, Average Loss: 4.975
+Iteration:   6000, Loss function: 4.449, Average Loss: 4.960
+Iteration:   6100, Loss function: 4.786, Average Loss: 4.946
+Iteration:   6200, Loss function: 5.119, Average Loss: 4.935
+Iteration:   6300, Loss function: 4.456, Average Loss: 4.917
+Iteration:   6400, Loss function: 4.710, Average Loss: 4.906
+:::MLLOG {"namespace": "", "time_ms": 1625780538444, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 7}}
+:::MLLOG {"namespace": "", "time_ms": 1625780538454, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 7}}
+:::MLLOG {"namespace": "", "time_ms": 1625780538466, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 7}}
+:::MLLOG {"namespace": "", "time_ms": 1625780538472, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 7}}
+Iteration:   6500, Loss function: 5.237, Average Loss: 4.891
+Iteration:   6600, Loss function: 4.694, Average Loss: 4.876
+Iteration:   6700, Loss function: 4.198, Average Loss: 4.859
+Iteration:   6800, Loss function: 5.206, Average Loss: 4.855
+Iteration:   6900, Loss function: 4.683, Average Loss: 4.849
+Iteration:   7000, Loss function: 5.118, Average Loss: 4.838
+Iteration:   7100, Loss function: 4.929, Average Loss: 4.828
+Iteration:   7200, Loss function: 4.421, Average Loss: 4.818
+Iteration:   7300, Loss function: 4.847, Average Loss: 4.802
+:::MLLOG {"namespace": "", "time_ms": 1625781352748, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 8}}
+:::MLLOG {"namespace": "", "time_ms": 1625781352750, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 8}}
+:::MLLOG {"namespace": "", "time_ms": 1625781352757, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 8}}
+:::MLLOG {"namespace": "", "time_ms": 1625781352776, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 8}}
+Iteration:   7400, Loss function: 4.471, Average Loss: 4.791
+Iteration:   7500, Loss function: 4.399, Average Loss: 4.782
+Iteration:   7600, Loss function: 4.366, Average Loss: 4.776
+Iteration:   7700, Loss function: 5.426, Average Loss: 4.762
+Iteration:   7800, Loss function: 5.203, Average Loss: 4.748
+Iteration:   7900, Loss function: 4.439, Average Loss: 4.737
+Iteration:   8000, Loss function: 3.675, Average Loss: 4.730
+Iteration:   8100, Loss function: 4.462, Average Loss: 4.724
+Iteration:   8200, Loss function: 4.238, Average Loss: 4.716
+:::MLLOG {"namespace": "", "time_ms": 1625782168172, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 9}}
+:::MLLOG {"namespace": "", "time_ms": 1625782168174, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 9}}
+:::MLLOG {"namespace": "", "time_ms": 1625782168174, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 9}}
+:::MLLOG {"namespace": "", "time_ms": 1625782168192, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 9}}
+Iteration:   8300, Loss function: 4.652, Average Loss: 4.706
+Iteration:   8400, Loss function: 4.544, Average Loss: 4.696
+Iteration:   8500, Loss function: 4.256, Average Loss: 4.691
+Iteration:   8600, Loss function: 3.993, Average Loss: 4.682
+Iteration:   8700, Loss function: 4.580, Average Loss: 4.673
+Iteration:   8800, Loss function: 4.307, Average Loss: 4.668
+Iteration:   8900, Loss function: 4.501, Average Loss: 4.660
+Iteration:   9000, Loss function: 4.382, Average Loss: 4.651
+Iteration:   9100, Loss function: 4.240, Average Loss: 4.643
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625782982982, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 10}}
+Completed inference on batch: 100
+Predicting Ended, total time: 397.38 s
+Loading and preparing results...
+Converting ndarray to lists...
+(564639, 7)
+0/564639
+DONE (t=3.41s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=54.49s).
+Accumulating evaluation results...
+DONE (t=7.33s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.125
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.244
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.118
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.028
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.137
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.191
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.152
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.222
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.234
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.055
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.243
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.360
+Current AP: 0.12473 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625783446414, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.12472562883740107, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 10}}
+:::MLLOG {"namespace": "", "time_ms": 1625783446414, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 10}}
+:::MLLOG {"namespace": "", "time_ms": 1625783447783, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 9}}
+:::MLLOG {"namespace": "", "time_ms": 1625783447783, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 9}}
+:::MLLOG {"namespace": "", "time_ms": 1625783447783, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 9}}
+:::MLLOG {"namespace": "", "time_ms": 1625783447783, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 9}}
+:::MLLOG {"namespace": "", "time_ms": 1625783447784, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 10}}
+:::MLLOG {"namespace": "", "time_ms": 1625783447784, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 10}}
+:::MLLOG {"namespace": "", "time_ms": 1625783447784, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 10}}
+:::MLLOG {"namespace": "", "time_ms": 1625783447784, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 10}}
+Iteration:   9200, Loss function: 4.912, Average Loss: 4.639
+Iteration:   9300, Loss function: 3.646, Average Loss: 4.627
+Iteration:   9400, Loss function: 4.421, Average Loss: 4.621
+Iteration:   9500, Loss function: 4.005, Average Loss: 4.616
+Iteration:   9600, Loss function: 4.741, Average Loss: 4.608
+Iteration:   9700, Loss function: 4.502, Average Loss: 4.603
+Iteration:   9800, Loss function: 4.631, Average Loss: 4.601
+Iteration:   9900, Loss function: 4.728, Average Loss: 4.599
+Iteration:  10000, Loss function: 4.275, Average Loss: 4.591
+:::MLLOG {"namespace": "", "time_ms": 1625784262635, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 11}}
+:::MLLOG {"namespace": "", "time_ms": 1625784262648, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 11}}
+:::MLLOG {"namespace": "", "time_ms": 1625784262648, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 11}}
+:::MLLOG {"namespace": "", "time_ms": 1625784262667, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 11}}
+Iteration:  10100, Loss function: 4.482, Average Loss: 4.589
+Iteration:  10200, Loss function: 5.086, Average Loss: 4.579
+Iteration:  10300, Loss function: 3.812, Average Loss: 4.575
+Iteration:  10400, Loss function: 4.124, Average Loss: 4.565
+Iteration:  10500, Loss function: 4.746, Average Loss: 4.561
+Iteration:  10600, Loss function: 4.040, Average Loss: 4.554
+Iteration:  10700, Loss function: 5.140, Average Loss: 4.549
+Iteration:  10800, Loss function: 4.476, Average Loss: 4.542
+Iteration:  10900, Loss function: 4.198, Average Loss: 4.539
+Iteration:  11000, Loss function: 4.569, Average Loss: 4.538
+:::MLLOG {"namespace": "", "time_ms": 1625785079615, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1625785079618, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1625785079625, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1625785079643, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 12}}
+Iteration:  11100, Loss function: 4.691, Average Loss: 4.532
+Iteration:  11200, Loss function: 4.174, Average Loss: 4.521
+Iteration:  11300, Loss function: 4.592, Average Loss: 4.519
+Iteration:  11400, Loss function: 4.268, Average Loss: 4.513
+Iteration:  11500, Loss function: 4.465, Average Loss: 4.509
+Iteration:  11600, Loss function: 4.408, Average Loss: 4.505
+Iteration:  11700, Loss function: 4.264, Average Loss: 4.502
+Iteration:  11800, Loss function: 4.426, Average Loss: 4.495
+Iteration:  11900, Loss function: 4.302, Average Loss: 4.488
+:::MLLOG {"namespace": "", "time_ms": 1625785894418, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 13}}
+:::MLLOG {"namespace": "", "time_ms": 1625785894423, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 13}}
+:::MLLOG {"namespace": "", "time_ms": 1625785894424, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 13}}
+:::MLLOG {"namespace": "", "time_ms": 1625785894440, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 13}}
+Iteration:  12000, Loss function: 4.658, Average Loss: 4.480
+Iteration:  12100, Loss function: 4.334, Average Loss: 4.476
+Iteration:  12200, Loss function: 4.735, Average Loss: 4.469
+Iteration:  12300, Loss function: 4.500, Average Loss: 4.468
+Iteration:  12400, Loss function: 4.502, Average Loss: 4.461
+Iteration:  12500, Loss function: 4.766, Average Loss: 4.460
+Iteration:  12600, Loss function: 4.159, Average Loss: 4.459
+Iteration:  12700, Loss function: 4.592, Average Loss: 4.449
+Iteration:  12800, Loss function: 4.176, Average Loss: 4.450
+:::MLLOG {"namespace": "", "time_ms": 1625786710488, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1625786710499, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1625786710508, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1625786710520, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 14}}
+Iteration:  12900, Loss function: 4.228, Average Loss: 4.444
+Iteration:  13000, Loss function: 4.516, Average Loss: 4.442
+Iteration:  13100, Loss function: 4.490, Average Loss: 4.438
+Iteration:  13200, Loss function: 4.359, Average Loss: 4.436
+Iteration:  13300, Loss function: 4.509, Average Loss: 4.436
+Iteration:  13400, Loss function: 4.289, Average Loss: 4.433
+Iteration:  13500, Loss function: 4.331, Average Loss: 4.427
+Iteration:  13600, Loss function: 4.914, Average Loss: 4.420
+Iteration:  13700, Loss function: 4.605, Average Loss: 4.415
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625787525467, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 15}}
+Completed inference on batch: 100
+Predicting Ended, total time: 324.15 s
+Loading and preparing results...
+Converting ndarray to lists...
+(464436, 7)
+0/464436
+DONE (t=3.03s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=50.94s).
+Accumulating evaluation results...
+DONE (t=6.66s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.134
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.262
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.126
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.028
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.137
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.217
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.155
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.229
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.244
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.062
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.246
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.378
+Current AP: 0.13419 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625787910925, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.1341918386859952, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 15}}
+:::MLLOG {"namespace": "", "time_ms": 1625787910926, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 15}}
+:::MLLOG {"namespace": "", "time_ms": 1625787912118, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1625787912118, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1625787912118, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1625787912118, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 15}}
+:::MLLOG {"namespace": "", "time_ms": 1625787912118, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1625787912118, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 15}}
+:::MLLOG {"namespace": "", "time_ms": 1625787912118, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 15}}
+:::MLLOG {"namespace": "", "time_ms": 1625787912118, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 15}}
+Iteration:  13800, Loss function: 4.520, Average Loss: 4.412
+Iteration:  13900, Loss function: 4.650, Average Loss: 4.411
+Iteration:  14000, Loss function: 4.755, Average Loss: 4.406
+Iteration:  14100, Loss function: 4.187, Average Loss: 4.401
+Iteration:  14200, Loss function: 4.009, Average Loss: 4.395
+Iteration:  14300, Loss function: 4.871, Average Loss: 4.393
+Iteration:  14400, Loss function: 4.443, Average Loss: 4.391
+Iteration:  14500, Loss function: 4.617, Average Loss: 4.394
+Iteration:  14600, Loss function: 4.357, Average Loss: 4.395
+:::MLLOG {"namespace": "", "time_ms": 1625788726384, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 16}}
+:::MLLOG {"namespace": "", "time_ms": 1625788726398, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 16}}
+:::MLLOG {"namespace": "", "time_ms": 1625788726418, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 16}}
+:::MLLOG {"namespace": "", "time_ms": 1625788726419, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 16}}
+Iteration:  14700, Loss function: 3.923, Average Loss: 4.395
+Iteration:  14800, Loss function: 4.464, Average Loss: 4.391
+Iteration:  14900, Loss function: 4.857, Average Loss: 4.383
+Iteration:  15000, Loss function: 3.941, Average Loss: 4.376
+Iteration:  15100, Loss function: 4.668, Average Loss: 4.374
+Iteration:  15200, Loss function: 4.155, Average Loss: 4.373
+Iteration:  15300, Loss function: 4.260, Average Loss: 4.373
+Iteration:  15400, Loss function: 4.775, Average Loss: 4.370
+Iteration:  15500, Loss function: 4.231, Average Loss: 4.370
+:::MLLOG {"namespace": "", "time_ms": 1625789540059, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 17}}
+:::MLLOG {"namespace": "", "time_ms": 1625789540068, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 17}}
+:::MLLOG {"namespace": "", "time_ms": 1625789540075, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 17}}
+:::MLLOG {"namespace": "", "time_ms": 1625789540089, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 17}}
+Iteration:  15600, Loss function: 4.241, Average Loss: 4.364
+Iteration:  15700, Loss function: 3.738, Average Loss: 4.360
+Iteration:  15800, Loss function: 4.256, Average Loss: 4.354
+Iteration:  15900, Loss function: 4.351, Average Loss: 4.351
+Iteration:  16000, Loss function: 4.393, Average Loss: 4.341
+Iteration:  16100, Loss function: 4.494, Average Loss: 4.341
+Iteration:  16200, Loss function: 4.422, Average Loss: 4.338
+Iteration:  16300, Loss function: 4.112, Average Loss: 4.334
+Iteration:  16400, Loss function: 4.084, Average Loss: 4.329
+Iteration:  16500, Loss function: 4.016, Average Loss: 4.329
+:::MLLOG {"namespace": "", "time_ms": 1625790355359, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1625790355374, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1625790355385, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1625790355391, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 18}}
+Iteration:  16600, Loss function: 4.550, Average Loss: 4.325
+Iteration:  16700, Loss function: 4.129, Average Loss: 4.325
+Iteration:  16800, Loss function: 4.337, Average Loss: 4.320
+Iteration:  16900, Loss function: 4.244, Average Loss: 4.317
+Iteration:  17000, Loss function: 4.046, Average Loss: 4.315
+Iteration:  17100, Loss function: 4.834, Average Loss: 4.316
+Iteration:  17200, Loss function: 4.448, Average Loss: 4.318
+Iteration:  17300, Loss function: 4.386, Average Loss: 4.322
+Iteration:  17400, Loss function: 4.422, Average Loss: 4.320
+:::MLLOG {"namespace": "", "time_ms": 1625791172196, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 19}}
+:::MLLOG {"namespace": "", "time_ms": 1625791172198, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 19}}
+:::MLLOG {"namespace": "", "time_ms": 1625791172214, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 19}}
+:::MLLOG {"namespace": "", "time_ms": 1625791172227, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 19}}
+Iteration:  17500, Loss function: 3.984, Average Loss: 4.321
+Iteration:  17600, Loss function: 4.498, Average Loss: 4.315
+Iteration:  17700, Loss function: 4.073, Average Loss: 4.314
+Iteration:  17800, Loss function: 4.630, Average Loss: 4.312
+Iteration:  17900, Loss function: 4.331, Average Loss: 4.306
+Iteration:  18000, Loss function: 4.618, Average Loss: 4.305
+Iteration:  18100, Loss function: 4.702, Average Loss: 4.294
+Iteration:  18200, Loss function: 4.416, Average Loss: 4.293
+Iteration:  18300, Loss function: 4.442, Average Loss: 4.289
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625791983148, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 20}}
+Completed inference on batch: 100
+Predicting Ended, total time: 381.08 s
+Loading and preparing results...
+Converting ndarray to lists...
+(524400, 7)
+0/524400
+DONE (t=3.26s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=54.41s).
+Accumulating evaluation results...
+DONE (t=13.08s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.143
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.279
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.134
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.035
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.153
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.220
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.163
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.242
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.257
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.066
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.279
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.373
+Current AP: 0.14302 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625792435779, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.14302388659349502, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 20}}
+:::MLLOG {"namespace": "", "time_ms": 1625792435779, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 20}}
+:::MLLOG {"namespace": "", "time_ms": 1625792437518, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 19}}
+:::MLLOG {"namespace": "", "time_ms": 1625792437518, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 19}}
+:::MLLOG {"namespace": "", "time_ms": 1625792437518, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 19}}
+:::MLLOG {"namespace": "", "time_ms": 1625792437518, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 19}}
+:::MLLOG {"namespace": "", "time_ms": 1625792437519, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 20}}
+:::MLLOG {"namespace": "", "time_ms": 1625792437519, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 20}}
+:::MLLOG {"namespace": "", "time_ms": 1625792437519, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 20}}
+:::MLLOG {"namespace": "", "time_ms": 1625792437519, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 20}}
+Iteration:  18400, Loss function: 4.051, Average Loss: 4.284
+Iteration:  18500, Loss function: 4.142, Average Loss: 4.284
+Iteration:  18600, Loss function: 4.337, Average Loss: 4.278
+Iteration:  18700, Loss function: 3.764, Average Loss: 4.277
+Iteration:  18800, Loss function: 4.582, Average Loss: 4.276
+Iteration:  18900, Loss function: 4.279, Average Loss: 4.278
+Iteration:  19000, Loss function: 4.160, Average Loss: 4.277
+Iteration:  19100, Loss function: 3.666, Average Loss: 4.278
+Iteration:  19200, Loss function: 4.401, Average Loss: 4.276
+:::MLLOG {"namespace": "", "time_ms": 1625793251589, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 21}}
+:::MLLOG {"namespace": "", "time_ms": 1625793251595, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 21}}
+:::MLLOG {"namespace": "", "time_ms": 1625793251605, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 21}}
+:::MLLOG {"namespace": "", "time_ms": 1625793251616, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 21}}
+Iteration:  19300, Loss function: 3.662, Average Loss: 4.279
+Iteration:  19400, Loss function: 4.550, Average Loss: 4.271
+Iteration:  19500, Loss function: 4.006, Average Loss: 4.266
+Iteration:  19600, Loss function: 3.681, Average Loss: 4.265
+Iteration:  19700, Loss function: 4.462, Average Loss: 4.263
+Iteration:  19800, Loss function: 4.823, Average Loss: 4.256
+Iteration:  19900, Loss function: 3.652, Average Loss: 4.253
+Iteration:  20000, Loss function: 4.223, Average Loss: 4.253
+Iteration:  20100, Loss function: 4.270, Average Loss: 4.255
+:::MLLOG {"namespace": "", "time_ms": 1625794067448, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 22}}
+:::MLLOG {"namespace": "", "time_ms": 1625794067452, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 22}}
+:::MLLOG {"namespace": "", "time_ms": 1625794067466, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 22}}
+:::MLLOG {"namespace": "", "time_ms": 1625794067486, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 22}}
+Iteration:  20200, Loss function: 4.447, Average Loss: 4.254
+Iteration:  20300, Loss function: 3.789, Average Loss: 4.249
+Iteration:  20400, Loss function: 3.774, Average Loss: 4.244
+Iteration:  20500, Loss function: 4.139, Average Loss: 4.245
+Iteration:  20600, Loss function: 3.845, Average Loss: 4.244
+Iteration:  20700, Loss function: 4.448, Average Loss: 4.241
+Iteration:  20800, Loss function: 4.355, Average Loss: 4.245
+Iteration:  20900, Loss function: 4.200, Average Loss: 4.245
+Iteration:  21000, Loss function: 4.177, Average Loss: 4.241
+:::MLLOG {"namespace": "", "time_ms": 1625794881726, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 23}}
+:::MLLOG {"namespace": "", "time_ms": 1625794881740, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 23}}
+:::MLLOG {"namespace": "", "time_ms": 1625794881744, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 23}}
+:::MLLOG {"namespace": "", "time_ms": 1625794881779, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 23}}
+Iteration:  21100, Loss function: 4.746, Average Loss: 4.242
+Iteration:  21200, Loss function: 4.069, Average Loss: 4.239
+Iteration:  21300, Loss function: 4.283, Average Loss: 4.236
+Iteration:  21400, Loss function: 4.073, Average Loss: 4.229
+Iteration:  21500, Loss function: 4.526, Average Loss: 4.226
+Iteration:  21600, Loss function: 4.964, Average Loss: 4.225
+Iteration:  21700, Loss function: 4.038, Average Loss: 4.216
+Iteration:  21800, Loss function: 4.430, Average Loss: 4.216
+Iteration:  21900, Loss function: 4.624, Average Loss: 4.218
+Iteration:  22000, Loss function: 4.279, Average Loss: 4.213
+:::MLLOG {"namespace": "", "time_ms": 1625795696914, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1625795696919, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1625795696920, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1625795696950, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 24}}
+Iteration:  22100, Loss function: 3.482, Average Loss: 4.208
+Iteration:  22200, Loss function: 4.158, Average Loss: 4.203
+Iteration:  22300, Loss function: 4.726, Average Loss: 4.202
+Iteration:  22400, Loss function: 4.083, Average Loss: 4.200
+Iteration:  22500, Loss function: 4.495, Average Loss: 4.200
+Iteration:  22600, Loss function: 4.032, Average Loss: 4.205
+Iteration:  22700, Loss function: 4.115, Average Loss: 4.201
+Iteration:  22800, Loss function: 4.065, Average Loss: 4.199
+Iteration:  22900, Loss function: 3.747, Average Loss: 4.197
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625796512990, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 25}}
+Completed inference on batch: 100
+Predicting Ended, total time: 347.86 s
+Loading and preparing results...
+Converting ndarray to lists...
+(494004, 7)
+0/494004
+DONE (t=3.11s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=50.84s).
+Accumulating evaluation results...
+DONE (t=6.78s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.156
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.294
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.151
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.036
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.167
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.247
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.171
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.253
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.267
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.068
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.285
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.415
+Current AP: 0.15615 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625796922306, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.15615383075853548, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 25}}
+:::MLLOG {"namespace": "", "time_ms": 1625796922307, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 25}}
+:::MLLOG {"namespace": "", "time_ms": 1625796923474, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1625796923474, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1625796923474, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1625796923474, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 25}}
+:::MLLOG {"namespace": "", "time_ms": 1625796923474, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1625796923474, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 25}}
+:::MLLOG {"namespace": "", "time_ms": 1625796923474, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 25}}
+:::MLLOG {"namespace": "", "time_ms": 1625796923474, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 25}}
+Iteration:  23000, Loss function: 3.846, Average Loss: 4.194
+Iteration:  23100, Loss function: 4.612, Average Loss: 4.187
+Iteration:  23200, Loss function: 4.444, Average Loss: 4.186
+Iteration:  23300, Loss function: 4.187, Average Loss: 4.181
+Iteration:  23400, Loss function: 4.574, Average Loss: 4.184
+Iteration:  23500, Loss function: 4.325, Average Loss: 4.184
+Iteration:  23600, Loss function: 3.383, Average Loss: 4.185
+Iteration:  23700, Loss function: 4.283, Average Loss: 4.188
+Iteration:  23800, Loss function: 4.494, Average Loss: 4.190
+:::MLLOG {"namespace": "", "time_ms": 1625797740279, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 26}}
+:::MLLOG {"namespace": "", "time_ms": 1625797740301, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 26}}
+:::MLLOG {"namespace": "", "time_ms": 1625797740306, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 26}}
+:::MLLOG {"namespace": "", "time_ms": 1625797740344, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 26}}
+Iteration:  23900, Loss function: 4.317, Average Loss: 4.190
+Iteration:  24000, Loss function: 3.894, Average Loss: 4.192
+Iteration:  24100, Loss function: 3.711, Average Loss: 4.187
+Iteration:  24200, Loss function: 4.139, Average Loss: 4.177
+Iteration:  24300, Loss function: 4.627, Average Loss: 4.182
+Iteration:  24400, Loss function: 3.857, Average Loss: 4.179
+Iteration:  24500, Loss function: 4.824, Average Loss: 4.176
+Iteration:  24600, Loss function: 4.414, Average Loss: 4.173
+Iteration:  24700, Loss function: 3.861, Average Loss: 4.172
+:::MLLOG {"namespace": "", "time_ms": 1625798546059, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 27}}
+:::MLLOG {"namespace": "", "time_ms": 1625798546060, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 27}}
+:::MLLOG {"namespace": "", "time_ms": 1625798546077, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 27}}
+:::MLLOG {"namespace": "", "time_ms": 1625798546100, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 27}}
+Iteration:  24800, Loss function: 4.873, Average Loss: 4.168
+Iteration:  24900, Loss function: 4.098, Average Loss: 4.166
+Iteration:  25000, Loss function: 4.738, Average Loss: 4.164
+Iteration:  25100, Loss function: 3.989, Average Loss: 4.162
+Iteration:  25200, Loss function: 4.459, Average Loss: 4.160
+Iteration:  25300, Loss function: 4.004, Average Loss: 4.160
+Iteration:  25400, Loss function: 3.798, Average Loss: 4.158
+Iteration:  25500, Loss function: 3.887, Average Loss: 4.152
+Iteration:  25600, Loss function: 3.997, Average Loss: 4.154
+:::MLLOG {"namespace": "", "time_ms": 1625799361835, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 28}}
+:::MLLOG {"namespace": "", "time_ms": 1625799361844, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 28}}
+:::MLLOG {"namespace": "", "time_ms": 1625799361847, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 28}}
+:::MLLOG {"namespace": "", "time_ms": 1625799361878, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 28}}
+Iteration:  25700, Loss function: 3.931, Average Loss: 4.156
+Iteration:  25800, Loss function: 3.541, Average Loss: 4.153
+Iteration:  25900, Loss function: 4.822, Average Loss: 4.153
+Iteration:  26000, Loss function: 4.017, Average Loss: 4.154
+Iteration:  26100, Loss function: 4.208, Average Loss: 4.153
+Iteration:  26200, Loss function: 3.729, Average Loss: 4.154
+Iteration:  26300, Loss function: 4.214, Average Loss: 4.152
+Iteration:  26400, Loss function: 3.893, Average Loss: 4.150
+Iteration:  26500, Loss function: 4.399, Average Loss: 4.149
+:::MLLOG {"namespace": "", "time_ms": 1625800180134, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 29}}
+:::MLLOG {"namespace": "", "time_ms": 1625800180144, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 29}}
+:::MLLOG {"namespace": "", "time_ms": 1625800180166, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 29}}
+:::MLLOG {"namespace": "", "time_ms": 1625800180169, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 29}}
+Iteration:  26600, Loss function: 4.115, Average Loss: 4.151
+Iteration:  26700, Loss function: 3.699, Average Loss: 4.150
+Iteration:  26800, Loss function: 4.166, Average Loss: 4.150
+Iteration:  26900, Loss function: 4.322, Average Loss: 4.150
+Iteration:  27000, Loss function: 4.015, Average Loss: 4.150
+Iteration:  27100, Loss function: 3.684, Average Loss: 4.142
+Iteration:  27200, Loss function: 4.166, Average Loss: 4.140
+Iteration:  27300, Loss function: 4.034, Average Loss: 4.142
+Iteration:  27400, Loss function: 3.957, Average Loss: 4.138
+Iteration:  27500, Loss function: 4.422, Average Loss: 4.134
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625800997472, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 30}}
+Completed inference on batch: 100
+Predicting Ended, total time: 342.90 s
+Loading and preparing results...
+Converting ndarray to lists...
+(453992, 7)
+0/453992
+DONE (t=4.61s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=48.24s).
+Accumulating evaluation results...
+DONE (t=6.33s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.155
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.297
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.150
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.035
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.162
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.255
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.171
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.250
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.264
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.063
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.277
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.408
+Current AP: 0.15524 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625801400213, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.15524448455523202, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1625801400213, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1625801401390, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 29}}
+:::MLLOG {"namespace": "", "time_ms": 1625801401390, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 29}}
+:::MLLOG {"namespace": "", "time_ms": 1625801401390, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 29}}
+:::MLLOG {"namespace": "", "time_ms": 1625801401390, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 29}}
+:::MLLOG {"namespace": "", "time_ms": 1625801401390, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1625801401391, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1625801401391, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1625801401391, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 30}}
+Iteration:  27600, Loss function: 4.245, Average Loss: 4.129
+Iteration:  27700, Loss function: 3.773, Average Loss: 4.122
+Iteration:  27800, Loss function: 4.016, Average Loss: 4.122
+Iteration:  27900, Loss function: 4.422, Average Loss: 4.121
+Iteration:  28000, Loss function: 4.271, Average Loss: 4.120
+Iteration:  28100, Loss function: 3.896, Average Loss: 4.116
+Iteration:  28200, Loss function: 3.646, Average Loss: 4.113
+Iteration:  28300, Loss function: 4.003, Average Loss: 4.116
+Iteration:  28400, Loss function: 4.013, Average Loss: 4.120
+:::MLLOG {"namespace": "", "time_ms": 1625802217243, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 31}}
+:::MLLOG {"namespace": "", "time_ms": 1625802217249, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 31}}
+:::MLLOG {"namespace": "", "time_ms": 1625802217260, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 31}}
+:::MLLOG {"namespace": "", "time_ms": 1625802217280, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 31}}
+Iteration:  28500, Loss function: 4.411, Average Loss: 4.121
+Iteration:  28600, Loss function: 3.613, Average Loss: 4.116
+Iteration:  28700, Loss function: 4.512, Average Loss: 4.120
+Iteration:  28800, Loss function: 4.054, Average Loss: 4.119
+Iteration:  28900, Loss function: 4.181, Average Loss: 4.117
+Iteration:  29000, Loss function: 3.908, Average Loss: 4.115
+Iteration:  29100, Loss function: 4.386, Average Loss: 4.114
+Iteration:  29200, Loss function: 4.147, Average Loss: 4.117
+Iteration:  29300, Loss function: 4.285, Average Loss: 4.120
+:::MLLOG {"namespace": "", "time_ms": 1625803031853, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 32}}
+:::MLLOG {"namespace": "", "time_ms": 1625803031853, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 32}}
+:::MLLOG {"namespace": "", "time_ms": 1625803031862, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 32}}
+:::MLLOG {"namespace": "", "time_ms": 1625803031886, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 32}}
+Iteration:  29400, Loss function: 4.406, Average Loss: 4.117
+Iteration:  29500, Loss function: 4.528, Average Loss: 4.117
+Iteration:  29600, Loss function: 3.984, Average Loss: 4.114
+Iteration:  29700, Loss function: 3.852, Average Loss: 4.116
+Iteration:  29800, Loss function: 4.233, Average Loss: 4.111
+Iteration:  29900, Loss function: 3.508, Average Loss: 4.111
+Iteration:  30000, Loss function: 4.253, Average Loss: 4.106
+Iteration:  30100, Loss function: 4.054, Average Loss: 4.105
+Iteration:  30200, Loss function: 4.891, Average Loss: 4.109
+:::MLLOG {"namespace": "", "time_ms": 1625803848176, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 33}}
+:::MLLOG {"namespace": "", "time_ms": 1625803848179, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 33}}
+:::MLLOG {"namespace": "", "time_ms": 1625803848186, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 33}}
+:::MLLOG {"namespace": "", "time_ms": 1625803848202, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 33}}
+Iteration:  30300, Loss function: 4.074, Average Loss: 4.110
+Iteration:  30400, Loss function: 3.961, Average Loss: 4.109
+Iteration:  30500, Loss function: 3.528, Average Loss: 4.106
+Iteration:  30600, Loss function: 3.932, Average Loss: 4.105
+Iteration:  30700, Loss function: 3.902, Average Loss: 4.101
+Iteration:  30800, Loss function: 3.970, Average Loss: 4.097
+Iteration:  30900, Loss function: 4.647, Average Loss: 4.094
+Iteration:  31000, Loss function: 4.679, Average Loss: 4.093
+Iteration:  31100, Loss function: 4.671, Average Loss: 4.086
+:::MLLOG {"namespace": "", "time_ms": 1625804662220, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 34}}
+:::MLLOG {"namespace": "", "time_ms": 1625804662223, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 34}}
+:::MLLOG {"namespace": "", "time_ms": 1625804662249, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 34}}
+:::MLLOG {"namespace": "", "time_ms": 1625804662272, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 34}}
+Iteration:  31200, Loss function: 4.133, Average Loss: 4.093
+Iteration:  31300, Loss function: 3.850, Average Loss: 4.097
+Iteration:  31400, Loss function: 3.558, Average Loss: 4.092
+Iteration:  31500, Loss function: 4.351, Average Loss: 4.095
+Iteration:  31600, Loss function: 3.909, Average Loss: 4.096
+Iteration:  31700, Loss function: 4.608, Average Loss: 4.094
+Iteration:  31800, Loss function: 4.127, Average Loss: 4.092
+Iteration:  31900, Loss function: 4.285, Average Loss: 4.089
+Iteration:  32000, Loss function: 3.846, Average Loss: 4.089
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625805476091, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 35}}
+Completed inference on batch: 100
+Predicting Ended, total time: 325.14 s
+Loading and preparing results...
+Converting ndarray to lists...
+(455829, 7)
+0/455829
+DONE (t=3.09s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=50.11s).
+Accumulating evaluation results...
+DONE (t=6.44s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.155
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.298
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.144
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.033
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.169
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.259
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.168
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.254
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.269
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.068
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.285
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.418
+Current AP: 0.15464 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625805861552, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.15463503175759813, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 35}}
+:::MLLOG {"namespace": "", "time_ms": 1625805861552, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 35}}
+:::MLLOG {"namespace": "", "time_ms": 1625805862740, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 34}}
+:::MLLOG {"namespace": "", "time_ms": 1625805862740, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 34}}
+:::MLLOG {"namespace": "", "time_ms": 1625805862740, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 34}}
+:::MLLOG {"namespace": "", "time_ms": 1625805862740, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 34}}
+:::MLLOG {"namespace": "", "time_ms": 1625805862741, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 35}}
+:::MLLOG {"namespace": "", "time_ms": 1625805862741, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 35}}
+:::MLLOG {"namespace": "", "time_ms": 1625805862741, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 35}}
+:::MLLOG {"namespace": "", "time_ms": 1625805862741, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 35}}
+Iteration:  32100, Loss function: 4.341, Average Loss: 4.088
+Iteration:  32200, Loss function: 4.293, Average Loss: 4.082
+Iteration:  32300, Loss function: 4.763, Average Loss: 4.079
+Iteration:  32400, Loss function: 3.758, Average Loss: 4.080
+Iteration:  32500, Loss function: 4.117, Average Loss: 4.072
+Iteration:  32600, Loss function: 3.817, Average Loss: 4.065
+Iteration:  32700, Loss function: 4.467, Average Loss: 4.069
+Iteration:  32800, Loss function: 4.206, Average Loss: 4.067
+Iteration:  32900, Loss function: 4.423, Average Loss: 4.073
+Iteration:  33000, Loss function: 3.827, Average Loss: 4.073
+:::MLLOG {"namespace": "", "time_ms": 1625806676221, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 36}}
+:::MLLOG {"namespace": "", "time_ms": 1625806676242, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 36}}
+:::MLLOG {"namespace": "", "time_ms": 1625806676245, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 36}}
+:::MLLOG {"namespace": "", "time_ms": 1625806676277, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 36}}
+Iteration:  33100, Loss function: 3.792, Average Loss: 4.067
+Iteration:  33200, Loss function: 3.932, Average Loss: 4.064
+Iteration:  33300, Loss function: 4.065, Average Loss: 4.065
+Iteration:  33400, Loss function: 3.398, Average Loss: 4.067
+Iteration:  33500, Loss function: 4.559, Average Loss: 4.067
+Iteration:  33600, Loss function: 4.464, Average Loss: 4.061
+Iteration:  33700, Loss function: 4.247, Average Loss: 4.064
+Iteration:  33800, Loss function: 3.659, Average Loss: 4.064
+Iteration:  33900, Loss function: 4.180, Average Loss: 4.066
+:::MLLOG {"namespace": "", "time_ms": 1625807490026, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 37}}
+:::MLLOG {"namespace": "", "time_ms": 1625807490029, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 37}}
+:::MLLOG {"namespace": "", "time_ms": 1625807490050, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 37}}
+:::MLLOG {"namespace": "", "time_ms": 1625807490067, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 37}}
+Iteration:  34000, Loss function: 4.014, Average Loss: 4.065
+Iteration:  34100, Loss function: 3.517, Average Loss: 4.060
+Iteration:  34200, Loss function: 4.564, Average Loss: 4.057
+Iteration:  34300, Loss function: 3.892, Average Loss: 4.057
+Iteration:  34400, Loss function: 3.977, Average Loss: 4.055
+Iteration:  34500, Loss function: 4.068, Average Loss: 4.055
+Iteration:  34600, Loss function: 4.689, Average Loss: 4.060
+Iteration:  34700, Loss function: 4.152, Average Loss: 4.065
+Iteration:  34800, Loss function: 3.682, Average Loss: 4.066
+:::MLLOG {"namespace": "", "time_ms": 1625808304136, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 38}}
+:::MLLOG {"namespace": "", "time_ms": 1625808304139, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 38}}
+:::MLLOG {"namespace": "", "time_ms": 1625808304145, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 38}}
+:::MLLOG {"namespace": "", "time_ms": 1625808304179, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 38}}
+Iteration:  34900, Loss function: 3.781, Average Loss: 4.062
+Iteration:  35000, Loss function: 4.259, Average Loss: 4.063
+Iteration:  35100, Loss function: 3.719, Average Loss: 4.061
+Iteration:  35200, Loss function: 4.308, Average Loss: 4.058
+Iteration:  35300, Loss function: 3.825, Average Loss: 4.061
+Iteration:  35400, Loss function: 3.856, Average Loss: 4.058
+Iteration:  35500, Loss function: 5.152, Average Loss: 4.057
+Iteration:  35600, Loss function: 4.237, Average Loss: 4.061
+Iteration:  35700, Loss function: 3.754, Average Loss: 4.054
+:::MLLOG {"namespace": "", "time_ms": 1625809117025, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 39}}
+:::MLLOG {"namespace": "", "time_ms": 1625809117026, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 39}}
+:::MLLOG {"namespace": "", "time_ms": 1625809117036, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 39}}
+:::MLLOG {"namespace": "", "time_ms": 1625809117067, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 39}}
+Iteration:  35800, Loss function: 4.064, Average Loss: 4.052
+Iteration:  35900, Loss function: 3.991, Average Loss: 4.046
+Iteration:  36000, Loss function: 4.271, Average Loss: 4.045
+Iteration:  36100, Loss function: 4.284, Average Loss: 4.051
+Iteration:  36200, Loss function: 4.285, Average Loss: 4.052
+Iteration:  36300, Loss function: 3.920, Average Loss: 4.049
+Iteration:  36400, Loss function: 4.104, Average Loss: 4.049
+Iteration:  36500, Loss function: 4.669, Average Loss: 4.049
+Iteration:  36600, Loss function: 3.829, Average Loss: 4.051
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625809932334, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 40}}
+Completed inference on batch: 100
+Predicting Ended, total time: 319.48 s
+Loading and preparing results...
+Converting ndarray to lists...
+(436477, 7)
+0/436477
+DONE (t=2.96s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=48.87s).
+Accumulating evaluation results...
+DONE (t=6.22s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.160
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.301
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.152
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.044
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.163
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.260
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.174
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.256
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.271
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.075
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.285
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.416
+Current AP: 0.15954 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625810310505, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.1595435406217433, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 40}}
+:::MLLOG {"namespace": "", "time_ms": 1625810310505, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 40}}
+:::MLLOG {"namespace": "", "time_ms": 1625810311661, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 39}}
+:::MLLOG {"namespace": "", "time_ms": 1625810311661, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 39}}
+:::MLLOG {"namespace": "", "time_ms": 1625810311661, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 39}}
+:::MLLOG {"namespace": "", "time_ms": 1625810311661, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 39}}
+:::MLLOG {"namespace": "", "time_ms": 1625810311661, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 40}}
+:::MLLOG {"namespace": "", "time_ms": 1625810311661, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 40}}
+:::MLLOG {"namespace": "", "time_ms": 1625810311661, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 40}}
+lr decay step #1
+lr decay step #1lr decay step #1
+:::MLLOG {"namespace": "", "time_ms": 1625810311661, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 40}}
+lr decay step #1
+Iteration:  36700, Loss function: 4.210, Average Loss: 4.052
+Iteration:  36800, Loss function: 3.980, Average Loss: 4.022
+Iteration:  36900, Loss function: 4.532, Average Loss: 3.991
+Iteration:  37000, Loss function: 3.987, Average Loss: 3.960
+Iteration:  37100, Loss function: 3.414, Average Loss: 3.933
+Iteration:  37200, Loss function: 3.567, Average Loss: 3.902
+Iteration:  37300, Loss function: 3.191, Average Loss: 3.875
+Iteration:  37400, Loss function: 3.634, Average Loss: 3.845
+Iteration:  37500, Loss function: 3.370, Average Loss: 3.820
+:::MLLOG {"namespace": "", "time_ms": 1625811128049, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 41}}
+:::MLLOG {"namespace": "", "time_ms": 1625811128069, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 41}}
+:::MLLOG {"namespace": "", "time_ms": 1625811128075, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 41}}
+:::MLLOG {"namespace": "", "time_ms": 1625811128110, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 41}}
+Iteration:  37600, Loss function: 3.165, Average Loss: 3.794
+Iteration:  37700, Loss function: 4.113, Average Loss: 3.773
+Iteration:  37800, Loss function: 3.888, Average Loss: 3.748
+Iteration:  37900, Loss function: 3.705, Average Loss: 3.735
+Iteration:  38000, Loss function: 3.147, Average Loss: 3.715
+Iteration:  38100, Loss function: 3.586, Average Loss: 3.704
+Iteration:  38200, Loss function: 3.475, Average Loss: 3.691
+Iteration:  38300, Loss function: 3.961, Average Loss: 3.680
+Iteration:  38400, Loss function: 3.336, Average Loss: 3.665
+Iteration:  38500, Loss function: 3.472, Average Loss: 3.646
+:::MLLOG {"namespace": "", "time_ms": 1625811944865, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 42}}
+:::MLLOG {"namespace": "", "time_ms": 1625811944867, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 42}}
+:::MLLOG {"namespace": "", "time_ms": 1625811944885, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 42}}
+:::MLLOG {"namespace": "", "time_ms": 1625811944900, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 42}}
+Iteration:  38600, Loss function: 3.886, Average Loss: 3.634
+Iteration:  38700, Loss function: 3.090, Average Loss: 3.623
+Iteration:  38800, Loss function: 3.610, Average Loss: 3.618
+Iteration:  38900, Loss function: 3.066, Average Loss: 3.610
+Iteration:  39000, Loss function: 2.946, Average Loss: 3.601
+Iteration:  39100, Loss function: 3.502, Average Loss: 3.587
+Iteration:  39200, Loss function: 3.428, Average Loss: 3.582
+Iteration:  39300, Loss function: 3.850, Average Loss: 3.572
+Iteration:  39400, Loss function: 3.435, Average Loss: 3.561
+:::MLLOG {"namespace": "", "time_ms": 1625812761865, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 43}}
+:::MLLOG {"namespace": "", "time_ms": 1625812761871, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 43}}
+:::MLLOG {"namespace": "", "time_ms": 1625812761896, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 43}}
+:::MLLOG {"namespace": "", "time_ms": 1625812761904, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 43}}
+Iteration:  39500, Loss function: 3.783, Average Loss: 3.552
+Iteration:  39600, Loss function: 3.989, Average Loss: 3.549
+Iteration:  39700, Loss function: 3.767, Average Loss: 3.546
+Iteration:  39800, Loss function: 3.951, Average Loss: 3.541
+Iteration:  39900, Loss function: 3.409, Average Loss: 3.536
+Iteration:  40000, Loss function: 3.257, Average Loss: 3.530
+Iteration:  40100, Loss function: 3.211, Average Loss: 3.531
+Iteration:  40200, Loss function: 3.592, Average Loss: 3.526
+Iteration:  40300, Loss function: 3.819, Average Loss: 3.526
+:::MLLOG {"namespace": "", "time_ms": 1625813578520, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 44}}
+:::MLLOG {"namespace": "", "time_ms": 1625813578522, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 44}}
+:::MLLOG {"namespace": "", "time_ms": 1625813578550, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 44}}
+:::MLLOG {"namespace": "", "time_ms": 1625813578571, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 44}}
+Iteration:  40400, Loss function: 3.749, Average Loss: 3.518
+Iteration:  40500, Loss function: 4.027, Average Loss: 3.511
+Iteration:  40600, Loss function: 3.474, Average Loss: 3.509
+Iteration:  40700, Loss function: 3.578, Average Loss: 3.507
+Iteration:  40800, Loss function: 3.005, Average Loss: 3.508
+Iteration:  40900, Loss function: 2.978, Average Loss: 3.506
+Iteration:  41000, Loss function: 3.794, Average Loss: 3.503
+Iteration:  41100, Loss function: 3.667, Average Loss: 3.500
+Iteration:  41200, Loss function: 3.425, Average Loss: 3.498
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625814392411, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 45}}
+Completed inference on batch: 100
+Predicting Ended, total time: 312.67 s
+Loading and preparing results...
+Converting ndarray to lists...
+(426133, 7)
+0/426133
+DONE (t=2.87s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=49.01s).
+Accumulating evaluation results...
+DONE (t=5.94s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.226
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.389
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.232
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.060
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.235
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.365
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.221
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.323
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.339
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.102
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.365
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.524
+Current AP: 0.22554 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625814763535, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.22554254531707688, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 45}}
+:::MLLOG {"namespace": "", "time_ms": 1625814763535, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 45}}
+:::MLLOG {"namespace": "", "time_ms": 1625814764585, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 44}}
+:::MLLOG {"namespace": "", "time_ms": 1625814764585, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 44}}
+:::MLLOG {"namespace": "", "time_ms": 1625814764585, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 44}}
+:::MLLOG {"namespace": "", "time_ms": 1625814764586, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 45}}
+:::MLLOG {"namespace": "", "time_ms": 1625814764586, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 45}}
+:::MLLOG {"namespace": "", "time_ms": 1625814764586, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "train.py", "lineno": 400, "epoch_num": 44}}
+:::MLLOG {"namespace": "", "time_ms": 1625814764586, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 45}}
+:::MLLOG {"namespace": "", "time_ms": 1625814764586, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 45}}
+Iteration:  41300, Loss function: 2.734, Average Loss: 3.489
+Iteration:  41400, Loss function: 3.808, Average Loss: 3.482
+Iteration:  41500, Loss function: 3.333, Average Loss: 3.480
+Iteration:  41600, Loss function: 3.980, Average Loss: 3.478
+Iteration:  41700, Loss function: 3.346, Average Loss: 3.475
+Iteration:  41800, Loss function: 3.702, Average Loss: 3.476
+Iteration:  41900, Loss function: 3.819, Average Loss: 3.469
+Iteration:  42000, Loss function: 3.346, Average Loss: 3.469
+Iteration:  42100, Loss function: 3.347, Average Loss: 3.463
+:::MLLOG {"namespace": "", "time_ms": 1625815580666, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 46}}
+:::MLLOG {"namespace": "", "time_ms": 1625815580666, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 46}}
+:::MLLOG {"namespace": "", "time_ms": 1625815580680, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 46}}
+:::MLLOG {"namespace": "", "time_ms": 1625815580716, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 46}}
+Iteration:  42200, Loss function: 4.059, Average Loss: 3.463
+Iteration:  42300, Loss function: 3.157, Average Loss: 3.461
+Iteration:  42400, Loss function: 3.580, Average Loss: 3.459
+Iteration:  42500, Loss function: 2.930, Average Loss: 3.457
+Iteration:  42600, Loss function: 3.863, Average Loss: 3.455
+Iteration:  42700, Loss function: 4.233, Average Loss: 3.455
+Iteration:  42800, Loss function: 3.210, Average Loss: 3.458
+Iteration:  42900, Loss function: 3.189, Average Loss: 3.456
+Iteration:  43000, Loss function: 3.456, Average Loss: 3.451
+:::MLLOG {"namespace": "", "time_ms": 1625816393764, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 47}}
+:::MLLOG {"namespace": "", "time_ms": 1625816393768, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 47}}
+:::MLLOG {"namespace": "", "time_ms": 1625816393817, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 47}}
+:::MLLOG {"namespace": "", "time_ms": 1625816393826, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 47}}
+Iteration:  43100, Loss function: 3.300, Average Loss: 3.447
+Iteration:  43200, Loss function: 4.182, Average Loss: 3.442
+Iteration:  43300, Loss function: 3.294, Average Loss: 3.443
+Iteration:  43400, Loss function: 3.514, Average Loss: 3.440
+Iteration:  43500, Loss function: 2.789, Average Loss: 3.437
+Iteration:  43600, Loss function: 3.490, Average Loss: 3.436
+Iteration:  43700, Loss function: 2.882, Average Loss: 3.433
+Iteration:  43800, Loss function: 3.465, Average Loss: 3.428
+Iteration:  43900, Loss function: 3.501, Average Loss: 3.428
+Iteration:  44000, Loss function: 3.155, Average Loss: 3.424
+:::MLLOG {"namespace": "", "time_ms": 1625817208462, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 48}}
+:::MLLOG {"namespace": "", "time_ms": 1625817208464, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 48}}
+:::MLLOG {"namespace": "", "time_ms": 1625817208481, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 48}}
+:::MLLOG {"namespace": "", "time_ms": 1625817208505, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 48}}
+Iteration:  44100, Loss function: 3.761, Average Loss: 3.423
+Iteration:  44200, Loss function: 4.019, Average Loss: 3.420
+Iteration:  44300, Loss function: 3.246, Average Loss: 3.414
+Iteration:  44400, Loss function: 3.588, Average Loss: 3.411
+Iteration:  44500, Loss function: 3.152, Average Loss: 3.411
+Iteration:  44600, Loss function: 3.150, Average Loss: 3.409
+Iteration:  44700, Loss function: 3.096, Average Loss: 3.406
+Iteration:  44800, Loss function: 3.134, Average Loss: 3.409
+Iteration:  44900, Loss function: 3.402, Average Loss: 3.412
+:::MLLOG {"namespace": "", "time_ms": 1625818022754, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 49}}
+:::MLLOG {"namespace": "", "time_ms": 1625818022759, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 49}}
+:::MLLOG {"namespace": "", "time_ms": 1625818022774, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 49}}
+:::MLLOG {"namespace": "", "time_ms": 1625818022792, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "train.py", "lineno": 326, "epoch_num": 49}}
+Iteration:  45000, Loss function: 2.950, Average Loss: 3.406
+Iteration:  45100, Loss function: 4.119, Average Loss: 3.403
+Iteration:  45200, Loss function: 3.235, Average Loss: 3.403
+Iteration:  45300, Loss function: 3.412, Average Loss: 3.404
+Iteration:  45400, Loss function: 3.854, Average Loss: 3.403
+Iteration:  45500, Loss function: 3.590, Average Loss: 3.405
+Iteration:  45600, Loss function: 3.855, Average Loss: 3.405
+Iteration:  45700, Loss function: 3.486, Average Loss: 3.403
+Iteration:  45800, Loss function: 3.292, Average Loss: 3.405
+nms_valid_thresh is set to 0.05
+:::MLLOG {"namespace": "", "time_ms": 1625818836334, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "train.py", "lineno": 114, "epoch_num": 50}}
+Completed inference on batch: 100
+Predicting Ended, total time: 309.94 s
+Loading and preparing results...
+Converting ndarray to lists...
+(410673, 7)
+0/410673
+DONE (t=2.86s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=48.74s).
+Accumulating evaluation results...
+DONE (t=5.75s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.231
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.395
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.236
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.065
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.240
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.375
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.224
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.325
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.342
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.107
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.371
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.526
+Current AP: 0.23076 AP goal: 0.23000
+:::MLLOG {"namespace": "", "time_ms": 1625819204228, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.23076349052532064, "metadata": {"file": "train.py", "lineno": 170, "epoch_num": 50}}
+:::MLLOG {"namespace": "", "time_ms": 1625819204229, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "train.py", "lineno": 173, "epoch_num": 50}}
+:::MLLOG {"namespace": "", "time_ms": 1625819207972, "event_type": "INTERVAL_END", "key": "run_stop", "value": {"success": true}, "metadata": {"file": "train.py", "lineno": 425}}
+:::MLLOG {"namespace": "", "time_ms": 1625819208046, "event_type": "INTERVAL_END", "key": "run_stop", "value": {"success": true}, "metadata": {"file": "train.py", "lineno": 425}}
+:::MLLOG {"namespace": "", "time_ms": 1625819208061, "event_type": "INTERVAL_END", "key": "run_stop", "value": {"success": true}, "metadata": {"file": "train.py", "lineno": 425}}
+:::MLLOG {"namespace": "", "time_ms": 1625819208066, "event_type": "INTERVAL_END", "key": "run_stop", "value": {"success": true}, "metadata": {"file": "train.py", "lineno": 425}}
++ ret_code=0
++ set +x
+ENDING TIMING RUN AT 2021-07-09 04:26:51 AM
+RESULT,OBJECT_DETECTION,,44809,nvidia,2021-07-08 04:00:02 PM
