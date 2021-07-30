@@ -1,0 +1,384 @@
+start
+benchmark start : 2021/05/23 20:45:17
+Number of GPUs on current device : 1
+CUDA Version : 10.2
+Cudnn Version : 7605
+Device Name : NVIDIA GeForce RTX 2060 SUPER
+uname_result(system='Linux', node='tiensi-ubuntu', release='5.8.0-53-generic', version='#60~20.04.1-Ubuntu SMP Thu May 6 09:52:46 UTC 2021', machine='x86_64', processor='x86_64')
+                     scpufreq(current=2527.0758125, min=2200.0, max=3600.0)
+                    cpu_count: 16
+                    memory_available: 12247097344
+Benchmarking Training float precision type mnasnet0_5 
+mnasnet0_5 model average train time : 12.630691528320312ms
+Benchmarking Training float precision type mnasnet0_75 
+mnasnet0_75 model average train time : 12.522249221801758ms
+Benchmarking Training float precision type mnasnet1_0 
+mnasnet1_0 model average train time : 12.504878044128418ms
+Benchmarking Training float precision type mnasnet1_3 
+mnasnet1_3 model average train time : 13.693065643310547ms
+Benchmarking Training float precision type resnet18 
+resnet18 model average train time : 6.944313049316406ms
+Benchmarking Training float precision type resnet34 
+resnet34 model average train time : 12.64073371887207ms
+Benchmarking Training float precision type resnet50 
+resnet50 model average train time : 19.550395011901855ms
+Benchmarking Training float precision type resnet101 
+resnet101 model average train time : 35.087904930114746ms
+Benchmarking Training float precision type resnet152 
+resnet152 model average train time : 49.46596145629883ms
+Benchmarking Training float precision type resnext50_32x4d 
+resnext50_32x4d model average train time : 29.484858512878418ms
+Benchmarking Training float precision type resnext101_32x8d 
+resnext101_32x8d model average train time : 74.6118974685669ms
+Benchmarking Training float precision type wide_resnet50_2 
+wide_resnet50_2 model average train time : 30.958356857299805ms
+Benchmarking Training float precision type wide_resnet101_2 
+wide_resnet101_2 model average train time : 57.048797607421875ms
+Benchmarking Training float precision type densenet121 
+densenet121 model average train time : 36.53743267059326ms
+Benchmarking Training float precision type densenet169 
+densenet169 model average train time : 50.70831298828125ms
+Benchmarking Training float precision type densenet201 
+densenet201 model average train time : 63.716511726379395ms
+Benchmarking Training float precision type densenet161 
+densenet161 model average train time : 52.47462749481201ms
+Benchmarking Training float precision type squeezenet1_0 
+squeezenet1_0 model average train time : 5.6037139892578125ms
+Benchmarking Training float precision type squeezenet1_1 
+squeezenet1_1 model average train time : 5.44222354888916ms
+Benchmarking Training float precision type vgg11 
+vgg11 model average train time : 18.186373710632324ms
+Benchmarking Training float precision type vgg11_bn 
+vgg11_bn model average train time : 19.444074630737305ms
+Benchmarking Training float precision type vgg13 
+vgg13 model average train time : 21.5211820602417ms
+Benchmarking Training float precision type vgg13_bn 
+vgg13_bn model average train time : 23.868408203125ms
+Benchmarking Training float precision type vgg16 
+vgg16 model average train time : 25.472006797790527ms
+Benchmarking Training float precision type vgg16_bn 
+vgg16_bn model average train time : 27.969164848327637ms
+Benchmarking Training float precision type vgg19_bn 
+vgg19_bn model average train time : 32.14522838592529ms
+Benchmarking Training float precision type vgg19 
+vgg19 model average train time : 29.359817504882812ms
+Benchmarking Training float precision type shufflenet_v2_x0_5 
+shufflenet_v2_x0_5 model average train time : 14.092450141906738ms
+Benchmarking Training float precision type shufflenet_v2_x1_0 
+shufflenet_v2_x1_0 model average train time : 16.51082992553711ms
+Benchmarking Training float precision type shufflenet_v2_x1_5 
+shufflenet_v2_x1_5 model average train time : 15.611820220947266ms
+Benchmarking Training float precision type shufflenet_v2_x2_0 
+shufflenet_v2_x2_0 model average train time : 15.259966850280762ms
+Benchmarking Inference float precision type mnasnet0_5 
+mnasnet0_5 model average inference time : 3.0518484115600586ms
+Benchmarking Inference float precision type mnasnet0_75 
+mnasnet0_75 model average inference time : 3.135056495666504ms
+Benchmarking Inference float precision type mnasnet1_0 
+mnasnet1_0 model average inference time : 3.147587776184082ms
+Benchmarking Inference float precision type mnasnet1_3 
+mnasnet1_3 model average inference time : 3.0974292755126953ms
+Benchmarking Inference float precision type resnet18 
+resnet18 model average inference time : 2.0453643798828125ms
+Benchmarking Inference float precision type resnet34 
+resnet34 model average inference time : 3.3284378051757812ms
+Benchmarking Inference float precision type resnet50 
+resnet50 model average inference time : 4.269261360168457ms
+Benchmarking Inference float precision type resnet101 
+resnet101 model average inference time : 7.628779411315918ms
+Benchmarking Inference float precision type resnet152 
+resnet152 model average inference time : 11.414728164672852ms
+Benchmarking Inference float precision type resnext50_32x4d 
+resnext50_32x4d model average inference time : 6.395430564880371ms
+Benchmarking Inference float precision type resnext101_32x8d 
+resnext101_32x8d model average inference time : 18.36019515991211ms
+Benchmarking Inference float precision type wide_resnet50_2 
+wide_resnet50_2 model average inference time : 7.652587890625ms
+Benchmarking Inference float precision type wide_resnet101_2 
+wide_resnet101_2 model average inference time : 14.189090728759766ms
+Benchmarking Inference float precision type densenet121 
+densenet121 model average inference time : 8.66769790649414ms
+Benchmarking Inference float precision type densenet169 
+densenet169 model average inference time : 11.827197074890137ms
+Benchmarking Inference float precision type densenet201 
+densenet201 model average inference time : 14.24264907836914ms
+Benchmarking Inference float precision type densenet161 
+densenet161 model average inference time : 13.297433853149414ms
+Benchmarking Inference float precision type squeezenet1_0 
+squeezenet1_0 model average inference time : 1.6532087326049805ms
+Benchmarking Inference float precision type squeezenet1_1 
+squeezenet1_1 model average inference time : 1.614065170288086ms
+Benchmarking Inference float precision type vgg11 
+vgg11 model average inference time : 4.216861724853516ms
+Benchmarking Inference float precision type vgg11_bn 
+vgg11_bn model average inference time : 4.165830612182617ms
+Benchmarking Inference float precision type vgg13 
+vgg13 model average inference time : 5.1106977462768555ms
+Benchmarking Inference float precision type vgg13_bn 
+vgg13_bn model average inference time : 5.884079933166504ms
+Benchmarking Inference float precision type vgg16 
+vgg16 model average inference time : 6.4620161056518555ms
+Benchmarking Inference float precision type vgg16_bn 
+vgg16_bn model average inference time : 6.771225929260254ms
+Benchmarking Inference float precision type vgg19_bn 
+vgg19_bn model average inference time : 8.268814086914062ms
+Benchmarking Inference float precision type vgg19 
+vgg19 model average inference time : 7.940378189086914ms
+Benchmarking Inference float precision type shufflenet_v2_x0_5 
+shufflenet_v2_x0_5 model average inference time : 4.111413955688477ms
+Benchmarking Inference float precision type shufflenet_v2_x1_0 
+shufflenet_v2_x1_0 model average inference time : 3.9652299880981445ms
+Benchmarking Inference float precision type shufflenet_v2_x1_5 
+shufflenet_v2_x1_5 model average inference time : 3.9395618438720703ms
+Benchmarking Inference float precision type shufflenet_v2_x2_0 
+shufflenet_v2_x2_0 model average inference time : 3.9252090454101562ms
+Benchmarking Training half precision type mnasnet0_5 
+mnasnet0_5 model average train time : 12.771668434143066ms
+Benchmarking Training half precision type mnasnet0_75 
+mnasnet0_75 model average train time : 13.422112464904785ms
+Benchmarking Training half precision type mnasnet1_0 
+mnasnet1_0 model average train time : 13.346409797668457ms
+Benchmarking Training half precision type mnasnet1_3 
+mnasnet1_3 model average train time : 14.691319465637207ms
+Benchmarking Training half precision type resnet18 
+resnet18 model average train time : 7.596855163574219ms
+Benchmarking Training half precision type resnet34 
+resnet34 model average train time : 13.031973838806152ms
+Benchmarking Training half precision type resnet50 
+resnet50 model average train time : 18.492298126220703ms
+Benchmarking Training half precision type resnet101 
+resnet101 model average train time : 34.36037063598633ms
+Benchmarking Training half precision type resnet152 
+resnet152 model average train time : 48.34481239318848ms
+Benchmarking Training half precision type resnext50_32x4d 
+resnext50_32x4d model average train time : 27.511777877807617ms
+Benchmarking Training half precision type resnext101_32x8d 
+resnext101_32x8d model average train time : 69.47973251342773ms
+Benchmarking Training half precision type wide_resnet50_2 
+wide_resnet50_2 model average train time : 27.494688034057617ms
+Benchmarking Training half precision type wide_resnet101_2 
+wide_resnet101_2 model average train time : 51.29063129425049ms
+Benchmarking Training half precision type densenet121 
+densenet121 model average train time : 38.58991622924805ms
+Benchmarking Training half precision type densenet169 
+densenet169 model average train time : 53.326754570007324ms
+Benchmarking Training half precision type densenet201 
+densenet201 model average train time : 66.68205738067627ms
+Benchmarking Training half precision type densenet161 
+densenet161 model average train time : 50.21842956542969ms
+Benchmarking Training half precision type squeezenet1_0 
+squeezenet1_0 model average train time : 6.472373008728027ms
+Benchmarking Training half precision type squeezenet1_1 
+squeezenet1_1 model average train time : 5.880422592163086ms
+Benchmarking Training half precision type vgg11 
+vgg11 model average train time : 11.831769943237305ms
+Benchmarking Training half precision type vgg11_bn 
+vgg11_bn model average train time : 12.756929397583008ms
+Benchmarking Training half precision type vgg13 
+vgg13 model average train time : 14.300360679626465ms
+Benchmarking Training half precision type vgg13_bn 
+vgg13_bn model average train time : 15.723662376403809ms
+Benchmarking Training half precision type vgg16 
+vgg16 model average train time : 17.079620361328125ms
+Benchmarking Training half precision type vgg16_bn 
+vgg16_bn model average train time : 18.723502159118652ms
+Benchmarking Training half precision type vgg19_bn 
+vgg19_bn model average train time : 21.568775177001953ms
+Benchmarking Training half precision type vgg19 
+vgg19 model average train time : 19.746546745300293ms
+Benchmarking Training half precision type shufflenet_v2_x0_5 
+shufflenet_v2_x0_5 model average train time : 15.056085586547852ms
+Benchmarking Training half precision type shufflenet_v2_x1_0 
+shufflenet_v2_x1_0 model average train time : 16.967287063598633ms
+Benchmarking Training half precision type shufflenet_v2_x1_5 
+shufflenet_v2_x1_5 model average train time : 18.653998374938965ms
+Benchmarking Training half precision type shufflenet_v2_x2_0 
+shufflenet_v2_x2_0 model average train time : 18.063273429870605ms
+Benchmarking Inference half precision type mnasnet0_5 
+mnasnet0_5 model average inference time : 3.242001533508301ms
+Benchmarking Inference half precision type mnasnet0_75 
+mnasnet0_75 model average inference time : 3.147311210632324ms
+Benchmarking Inference half precision type mnasnet1_0 
+mnasnet1_0 model average inference time : 3.412766456604004ms
+Benchmarking Inference half precision type mnasnet1_3 
+mnasnet1_3 model average inference time : 3.401970863342285ms
+Benchmarking Inference half precision type resnet18 
+resnet18 model average inference time : 2.1326494216918945ms
+Benchmarking Inference half precision type resnet34 
+resnet34 model average inference time : 4.004621505737305ms
+Benchmarking Inference half precision type resnet50 
+resnet50 model average inference time : 4.525704383850098ms
+Benchmarking Inference half precision type resnet101 
+resnet101 model average inference time : 7.99929141998291ms
+Benchmarking Inference half precision type resnet152 
+resnet152 model average inference time : 11.47909164428711ms
+Benchmarking Inference half precision type resnext50_32x4d 
+resnext50_32x4d model average inference time : 6.459641456604004ms
+Benchmarking Inference half precision type resnext101_32x8d 
+resnext101_32x8d model average inference time : 14.15903091430664ms
+Benchmarking Inference half precision type wide_resnet50_2 
+wide_resnet50_2 model average inference time : 6.717948913574219ms
+Benchmarking Inference half precision type wide_resnet101_2 
+wide_resnet101_2 model average inference time : 12.665491104125977ms
+Benchmarking Inference half precision type densenet121 
+densenet121 model average inference time : 9.170417785644531ms
+Benchmarking Inference half precision type densenet169 
+densenet169 model average inference time : 12.885894775390625ms
+Benchmarking Inference half precision type densenet201 
+densenet201 model average inference time : 15.439119338989258ms
+Benchmarking Inference half precision type densenet161 
+densenet161 model average inference time : 12.805089950561523ms
+Benchmarking Inference half precision type squeezenet1_0 
+squeezenet1_0 model average inference time : 1.6735315322875977ms
+Benchmarking Inference half precision type squeezenet1_1 
+squeezenet1_1 model average inference time : 1.570587158203125ms
+Benchmarking Inference half precision type vgg11 
+vgg11 model average inference time : 3.007626533508301ms
+Benchmarking Inference half precision type vgg11_bn 
+vgg11_bn model average inference time : 2.656259536743164ms
+Benchmarking Inference half precision type vgg13 
+vgg13 model average inference time : 3.0260467529296875ms
+Benchmarking Inference half precision type vgg13_bn 
+vgg13_bn model average inference time : 3.2657861709594727ms
+Benchmarking Inference half precision type vgg16 
+vgg16 model average inference time : 3.74722957611084ms
+Benchmarking Inference half precision type vgg16_bn 
+vgg16_bn model average inference time : 3.983907699584961ms
+Benchmarking Inference half precision type vgg19_bn 
+vgg19_bn model average inference time : 4.852128028869629ms
+Benchmarking Inference half precision type vgg19 
+vgg19 model average inference time : 4.564175605773926ms
+Benchmarking Inference half precision type shufflenet_v2_x0_5 
+shufflenet_v2_x0_5 model average inference time : 4.144902229309082ms
+Benchmarking Inference half precision type shufflenet_v2_x1_0 
+shufflenet_v2_x1_0 model average inference time : 4.358992576599121ms
+Benchmarking Inference half precision type shufflenet_v2_x1_5 
+shufflenet_v2_x1_5 model average inference time : 4.260225296020508ms
+Benchmarking Inference half precision type shufflenet_v2_x2_0 
+shufflenet_v2_x2_0 model average inference time : 4.280142784118652ms
+Benchmarking Training double precision type mnasnet0_5 
+mnasnet0_5 model average train time : 28.382372856140137ms
+Benchmarking Training double precision type mnasnet0_75 
+mnasnet0_75 model average train time : 51.379618644714355ms
+Benchmarking Training double precision type mnasnet1_0 
+mnasnet1_0 model average train time : 61.80941104888916ms
+Benchmarking Training double precision type mnasnet1_3 
+mnasnet1_3 model average train time : 94.47390079498291ms
+Benchmarking Training double precision type resnet18 
+resnet18 model average train time : 190.00245571136475ms
+Benchmarking Training double precision type resnet34 
+resnet34 model average train time : 397.3840093612671ms
+Benchmarking Training double precision type resnet50 
+resnet50 model average train time : 402.18599796295166ms
+Benchmarking Training double precision type resnet101 
+resnet101 model average train time : 922.1060180664062ms
+Benchmarking Training double precision type resnet152 
+resnet152 model average train time : 1355.6666898727417ms
+Benchmarking Training double precision type resnext50_32x4d 
+resnext50_32x4d model average train time : 307.8697872161865ms
+Benchmarking Training double precision type resnext101_32x8d 
+resnext101_32x8d model average train time : 995.2508735656738ms
+Benchmarking Training double precision type wide_resnet50_2 
+wide_resnet50_2 model average train time : 805.4938745498657ms
+Benchmarking Training double precision type wide_resnet101_2 
+wide_resnet101_2 model average train time : 1745.663185119629ms
+Benchmarking Training double precision type densenet121 
+densenet121 model average train time : 193.6858320236206ms
+Benchmarking Training double precision type densenet169 
+densenet169 model average train time : 259.82697010040283ms
+Benchmarking Training double precision type densenet201 
+densenet201 model average train time : 335.67781925201416ms
+Benchmarking Training double precision type densenet161 
+densenet161 model average train time : 754.4519472122192ms
+Benchmarking Training double precision type squeezenet1_0 
+squeezenet1_0 model average train time : 51.220078468322754ms
+Benchmarking Training double precision type squeezenet1_1 
+squeezenet1_1 model average train time : 42.28065013885498ms
+Benchmarking Training double precision type vgg11 
+vgg11 model average train time : 302.80062675476074ms
+Benchmarking Training double precision type vgg11_bn 
+vgg11_bn model average train time : 307.12573051452637ms
+Benchmarking Training double precision type vgg13 
+vgg13 model average train time : 405.43063163757324ms
+Benchmarking Training double precision type vgg13_bn 
+vgg13_bn model average train time : 413.33624362945557ms
+Benchmarking Training double precision type vgg16 
+vgg16 model average train time : 561.2943315505981ms
+Benchmarking Training double precision type vgg16_bn 
+vgg16_bn model average train time : 568.2855033874512ms
+Benchmarking Training double precision type vgg19_bn 
+vgg19_bn model average train time : 724.5386505126953ms
+Benchmarking Training double precision type vgg19 
+vgg19 model average train time : 715.6945371627808ms
+Benchmarking Training double precision type shufflenet_v2_x0_5 
+shufflenet_v2_x0_5 model average train time : 19.051485061645508ms
+Benchmarking Training double precision type shufflenet_v2_x1_0 
+shufflenet_v2_x1_0 model average train time : 37.266716957092285ms
+Benchmarking Training double precision type shufflenet_v2_x1_5 
+shufflenet_v2_x1_5 model average train time : 54.194602966308594ms
+Benchmarking Training double precision type shufflenet_v2_x2_0 
+shufflenet_v2_x2_0 model average train time : 99.85089302062988ms
+Benchmarking Inference double precision type mnasnet0_5 
+mnasnet0_5 model average inference time : 8.535895347595215ms
+Benchmarking Inference double precision type mnasnet0_75 
+mnasnet0_75 model average inference time : 23.93636703491211ms
+Benchmarking Inference double precision type mnasnet1_0 
+mnasnet1_0 model average inference time : 26.941981315612793ms
+Benchmarking Inference double precision type mnasnet1_3 
+mnasnet1_3 model average inference time : 50.59730529785156ms
+Benchmarking Inference double precision type resnet18 
+resnet18 model average inference time : 137.4006748199463ms
+Benchmarking Inference double precision type resnet34 
+resnet34 model average inference time : 286.9584846496582ms
+Benchmarking Inference double precision type resnet50 
+resnet50 model average inference time : 245.65486431121826ms
+Benchmarking Inference double precision type resnet101 
+resnet101 model average inference time : 556.9550848007202ms
+Benchmarking Inference double precision type resnet152 
+resnet152 model average inference time : 808.049464225769ms
+Benchmarking Inference double precision type resnext50_32x4d 
+resnext50_32x4d model average inference time : 134.10077095031738ms
+Benchmarking Inference double precision type resnext101_32x8d 
+resnext101_32x8d model average inference time : 405.7853889465332ms
+Benchmarking Inference double precision type wide_resnet50_2 
+wide_resnet50_2 model average inference time : 468.5853958129883ms
+Benchmarking Inference double precision type wide_resnet101_2 
+wide_resnet101_2 model average inference time : 1001.0183000564575ms
+Benchmarking Inference double precision type densenet121 
+densenet121 model average inference time : 74.19113159179688ms
+Benchmarking Inference double precision type densenet169 
+densenet169 model average inference time : 105.33742904663086ms
+Benchmarking Inference double precision type densenet201 
+densenet201 model average inference time : 138.79214763641357ms
+Benchmarking Inference double precision type densenet161 
+densenet161 model average inference time : 487.84828662872314ms
+Benchmarking Inference double precision type squeezenet1_0 
+squeezenet1_0 model average inference time : 20.95757484436035ms
+Benchmarking Inference double precision type squeezenet1_1 
+squeezenet1_1 model average inference time : 18.01151752471924ms
+Benchmarking Inference double precision type vgg11 
+vgg11 model average inference time : 131.96660041809082ms
+Benchmarking Inference double precision type vgg11_bn 
+vgg11_bn model average inference time : 132.90499210357666ms
+Benchmarking Inference double precision type vgg13 
+vgg13 model average inference time : 166.81812286376953ms
+Benchmarking Inference double precision type vgg13_bn 
+vgg13_bn model average inference time : 167.95634269714355ms
+Benchmarking Inference double precision type vgg16 
+vgg16 model average inference time : 239.0772819519043ms
+Benchmarking Inference double precision type vgg16_bn 
+vgg16_bn model average inference time : 240.1187229156494ms
+Benchmarking Inference double precision type vgg19_bn 
+vgg19_bn model average inference time : 311.9523096084595ms
+Benchmarking Inference double precision type vgg19 
+vgg19 model average inference time : 310.9578609466553ms
+Benchmarking Inference double precision type shufflenet_v2_x0_5 
+shufflenet_v2_x0_5 model average inference time : 5.166540145874023ms
+Benchmarking Inference double precision type shufflenet_v2_x1_0 
+shufflenet_v2_x1_0 model average inference time : 16.85950756072998ms
+Benchmarking Inference double precision type shufflenet_v2_x1_5 
+shufflenet_v2_x1_5 model average inference time : 21.64842128753662ms
+Benchmarking Inference double precision type shufflenet_v2_x2_0 
+shufflenet_v2_x2_0 model average inference time : 52.58279800415039ms
+benchmark end : 2021/05/23 21:08:26
+end

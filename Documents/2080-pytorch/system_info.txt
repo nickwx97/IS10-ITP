@@ -1,0 +1,13 @@
+benchmark start : 2021/05/21 11:50:45
+system_configs
+
+uname_result(system='Linux', node='cj-MS-7B18', release='5.8.0-53-generic', version='#60~20.04.1-Ubuntu SMP Thu May 6 09:52:46 UTC 2021', machine='x86_64', processor='x86_64')
+                     scpufreq(current=3600.14025, min=800.0, max=3600.0)
+                    cpu_count: 8
+                    memory_available: 30634762240
+gpu_configs
+
+Number of GPUs on current device : 1
+CUDA Version : 10.2
+Cudnn Version : 7605
+Device Name : GeForce RTX 2080

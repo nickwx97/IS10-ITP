@@ -1,0 +1,14 @@
+benchmark start : 2021/05/23 20:45:17
+system_configs
+
+uname_result(system='Linux', node='tiensi-ubuntu', release='5.8.0-53-generic', version='#60~20.04.1-Ubuntu SMP Thu May 6 09:52:46 UTC 2021', machine='x86_64', processor='x86_64')
+                     scpufreq(current=2527.0758125, min=2200.0, max=3600.0)
+                    cpu_count: 16
+                    memory_available: 12247097344
+gpu_configs
+
+Number of GPUs on current device : 1
+CUDA Version : 10.2
+Cudnn Version : 7605
+Device Name : NVIDIA GeForce RTX 2060 SUPER
+benchmark end : 2021/05/23 21:08:26

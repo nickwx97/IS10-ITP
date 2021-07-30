@@ -1,0 +1,154 @@
+hashcat (v5.1.0) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33m* Device #1: WARNING! Kernel exec timeout is not disabled.[0m
+[33m             This may cause "CL_OUT_OF_RESOURCES" or related errors.[0m
+[33m             To disable the timeout, see: https://hashcat.net/q/timeoutpatch[0m
+OpenCL Platform #1: NVIDIA Corporation
+======================================
+* Device #1: GeForce RTX 2060 SUPER, 1993/7974 MB allocatable, 34MCU
+
+Benchmark relevant options:
+===========================
+* --optimized-kernel-enable
+
+Hashmode: 0 - MD5
+
+Speed.#1.........: 25743.8 MH/s (88.34ms) @ Accel:256 Loops:1024 Thr:256 Vec:1
+
+Hashmode: 100 - SHA1
+
+Speed.#1.........:  9111.8 MH/s (62.35ms) @ Accel:256 Loops:256 Thr:256 Vec:1
+
+Hashmode: 1400 - SHA2-256
+
+Speed.#1.........:  3791.2 MH/s (74.95ms) @ Accel:256 Loops:128 Thr:256 Vec:1
+
+Hashmode: 1700 - SHA2-512
+
+Speed.#1.........:  1234.4 MH/s (57.62ms) @ Accel:128 Loops:64 Thr:256 Vec:1
+
+Hashmode: 2500 - WPA-EAPOL-PBKDF2 (Iterations: 4096)
+
+Speed.#1.........:   401.0 kH/s (86.22ms) @ Accel:256 Loops:64 Thr:256 Vec:1
+
+Hashmode: 1000 - NTLM
+
+Speed.#1.........: 45509.4 MH/s (49.75ms) @ Accel:256 Loops:1024 Thr:256 Vec:1
+
+Hashmode: 3000 - LM
+
+Speed.#1.........: 23868.3 MH/s (95.19ms) @ Accel:256 Loops:1024 Thr:256 Vec:1
+
+Hashmode: 5500 - NetNTLMv1 / NetNTLMv1+ESS
+
+Speed.#1.........: 25221.8 MH/s (90.08ms) @ Accel:256 Loops:1024 Thr:256 Vec:1
+
+Hashmode: 5600 - NetNTLMv2
+
+
+
+Speed.#1.........:  1929.2 MH/s (73.66ms) @ Accel:256 Loops:64 Thr:256 Vec:1
+
+Hashmode: 1500 - descrypt, DES (Unix), Traditional DES
+
+
+
+Speed.#1.........:   943.2 MH/s (75.49ms) @ Accel:8 Loops:1024 Thr:256 Vec:1
+
+Hashmode: 500 - md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5) (Iterations: 1000)
+
+
+
+Speed.#1.........: 10001.9 kH/s (102.65ms) @ Accel:1024 Loops:1000 Thr:32 Vec:1
+
+Hashmode: 3200 - bcrypt $2*$, Blowfish (Unix) (Iterations: 32)
+
+
+
+Speed.#1.........:    13592 H/s (39.16ms) @ Accel:16 Loops:4 Thr:8 Vec:1
+
+Hashmode: 1800 - sha512crypt $6$, SHA512 (Unix) (Iterations: 5000)
+
+
+
+Speed.#1.........:   176.8 kH/s (77.97ms) @ Accel:512 Loops:128 Thr:32 Vec:1
+
+Hashmode: 7500 - Kerberos 5 AS-REQ Pre-Auth etype 23
+
+
+
+Speed.#1.........:   353.8 MH/s (50.32ms) @ Accel:128 Loops:64 Thr:64 Vec:1
+
+Hashmode: 13100 - Kerberos 5 TGS-REP etype 23
+
+
+
+Speed.#1.........:   349.8 MH/s (50.89ms) @ Accel:128 Loops:64 Thr:64 Vec:1
+
+Hashmode: 15300 - DPAPI masterkey file v1 (Iterations: 23999)
+
+
+
+Speed.#1.........:    74253 H/s (79.51ms) @ Accel:256 Loops:64 Thr:256 Vec:1
+
+Hashmode: 15900 - DPAPI masterkey file v2 (Iterations: 7999)
+
+
+
+Speed.#1.........:    64032 H/s (69.47ms) @ Accel:256 Loops:128 Thr:32 Vec:1
+
+Hashmode: 7100 - macOS v10.8+ (PBKDF2-SHA512) (Iterations: 35000)
+
+
+
+Speed.#1.........:    15385 H/s (65.91ms) @ Accel:128 Loops:32 Thr:256 Vec:1
+
+Hashmode: 11600 - 7-Zip (Iterations: 524288)
+
+
+
+Speed.#1.........:    10380 H/s (52.13ms) @ Accel:256 Loops:128 Thr:256 Vec:1
+
+Hashmode: 12500 - RAR3-hp (Iterations: 262144)
+
+
+
+Speed.#1.........:    45708 H/s (47.42ms) @ Accel:4 Loops:16384 Thr:256 Vec:1
+
+Hashmode: 13000 - RAR5 (Iterations: 32767)
+
+
+
+Speed.#1.........:    44894 H/s (48.23ms) @ Accel:128 Loops:64 Thr:256 Vec:1
+
+Hashmode: 6211 - TrueCrypt PBKDF2-HMAC-RIPEMD160 + XTS 512 bit (Iterations: 2000)
+
+
+
+Speed.#1.........:   289.7 kH/s (100.03ms) @ Accel:128 Loops:64 Thr:256 Vec:1
+
+Hashmode: 13400 - KeePass 1 (AES/Twofish) and KeePass 2 (AES) (Iterations: 6000)
+
+
+
+Speed.#1.........:   102.7 kH/s (231.03ms) @ Accel:512 Loops:256 Thr:32 Vec:1
+
+Hashmode: 6800 - LastPass + LastPass sniffed (Iterations: 500)
+
+
+
+Speed.#1.........:  2949.5 kH/s (39.74ms) @ Accel:128 Loops:62 Thr:256 Vec:1
+
+Hashmode: 11300 - Bitcoin/Litecoin wallet.dat (Iterations: 199999)
+
+
+
+Speed.#1.........:     5674 H/s (62.61ms) @ Accel:128 Loops:64 Thr:256 Vec:1
+
+Started: Wed May 19 17:11:11 2021
+[2KStopped: Wed May 19 17:15:00 2021

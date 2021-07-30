@@ -1,0 +1,314 @@
+2021-05-21 17:37:21.068787: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2021-05-21 17:37:22.782421: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-21 17:37:22.783708: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2021-05-21 17:37:22.820506: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:22.821009: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:37:22.821026: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2021-05-21 17:37:22.823378: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2021-05-21 17:37:22.823403: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2021-05-21 17:37:22.823944: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2021-05-21 17:37:22.824066: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2021-05-21 17:37:22.824341: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2021-05-21 17:37:22.824810: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2021-05-21 17:37:22.824882: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2021-05-21 17:37:22.824942: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:22.825309: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:22.825631: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:37:22.825647: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2021-05-21 17:37:23.137459: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:37:23.137503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:37:23.137510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:37:23.137644: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.137993: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.138315: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.138634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:37:23.138989: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.139302: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:37:23.139334: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.139649: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.139944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:37:23.139956: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:37:23.139960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:37:23.139964: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:37:23.140047: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.140365: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.140664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:37:23.140723: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.141020: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:37:23.141047: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.141356: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.141651: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:37:23.141660: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:37:23.141664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:37:23.141668: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:37:23.141709: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.142022: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:23.142320: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:37:30.514048: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:30.514673: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:37:30.514759: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:30.515424: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:30.515939: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:37:30.516295: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:30.516829: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:37:30.516885: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:30.517431: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:30.517937: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:37:30.517974: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:37:30.517984: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:37:30.517991: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:37:30.518080: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:30.518634: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:30.519164: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:37:30.746800: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 3599850000 Hz
+2021-05-21 17:37:31.301404: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2021-05-21 17:37:31.575451: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8200
+2021-05-21 17:37:31.919487: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2021-05-21 17:37:32.237327: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2021-05-21 17:37:47.873099: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:47.873401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:37:47.873447: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:47.873643: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:47.873813: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:37:47.873838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:37:47.873843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:37:47.873848: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:37:47.873901: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:47.874099: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:37:47.874273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:38:05.604608: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:05.604900: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:38:05.604998: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:05.605767: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:05.605944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:38:05.605970: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:38:05.605975: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:38:05.605980: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:38:05.606219: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:05.606417: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:05.606657: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:38:23.869816: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:23.870110: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:38:23.871008: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:23.872138: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:23.872311: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:38:23.872338: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:38:23.872344: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:38:23.872349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:38:23.872800: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:23.873016: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:23.873191: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:38:47.624837: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:47.625124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:38:47.626103: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:47.627178: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:47.627366: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:38:47.627396: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:38:47.627402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:38:47.627406: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:38:47.628357: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:47.628624: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:47.628813: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:38:58.606720: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:58.607001: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:38:58.607935: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:58.609016: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:58.609192: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:38:58.609218: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:38:58.609224: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:38:58.609228: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:38:58.609638: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:58.609839: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:38:58.610019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:39:16.886144: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:16.886434: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:39:16.887374: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:16.888444: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:16.888622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:39:16.888648: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:39:16.888654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:39:16.888659: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:39:16.889593: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:16.890552: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:16.890740: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:39:30.724128: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:30.724524: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:39:30.724878: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:30.725193: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:30.725459: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:39:30.725496: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:39:30.725506: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:39:30.725514: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:39:30.725609: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:30.725918: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:30.726189: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:39:44.419714: W tensorflow/core/common_runtime/bfc_allocator.cc:271] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.16GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-21 17:39:44.419772: W tensorflow/core/common_runtime/bfc_allocator.cc:271] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.16GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-21 17:39:59.472130: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:59.472382: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:39:59.472420: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:59.472613: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:59.472793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:39:59.472820: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:39:59.472825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:39:59.472829: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:39:59.472881: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:59.473077: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:39:59.473251: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:40:25.928930: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:25.929217: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:40:25.929339: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:25.929542: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:25.929759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:40:25.929793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:40:25.929801: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:40:25.929807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:40:25.929865: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:25.930073: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:25.930247: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:40:48.984393: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:48.984673: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:40:48.984840: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:48.985043: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:48.985214: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:40:48.985240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:40:48.985245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:40:48.985249: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:40:48.985301: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:48.985494: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:40:48.985668: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:41:19.245411: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:19.245679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:41:19.245716: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:19.245909: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:19.246172: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:41:19.246205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:41:19.246211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:41:19.246216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:41:19.246269: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:19.246465: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:19.246638: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:41:55.705792: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:55.706101: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:41:55.706217: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:55.706683: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:55.706871: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:41:55.706899: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:41:55.706904: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:41:55.706908: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:41:55.707395: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:55.707855: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:41:55.708030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:42:12.362384: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:12.362675: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:42:12.363083: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:12.363840: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:12.364014: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:42:12.364040: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:42:12.364045: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:42:12.364050: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:42:12.364198: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:12.364393: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:12.364567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:42:42.904141: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:42.904446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:42:42.904549: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:42.904750: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:42.904922: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:42:42.904950: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:42:42.904955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:42:42.904962: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:42:42.905016: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:42.905213: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:42:42.905390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:43:10.766680: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:10.766995: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:43:10.767258: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:10.768233: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:10.768415: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:43:10.768441: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:43:10.768447: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:43:10.768451: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:43:10.768613: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:10.768814: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:10.768993: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:43:27.391613: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:27.391930: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:43:27.392824: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:27.393906: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:27.394081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:43:27.394107: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:43:27.394112: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:43:27.394116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:43:27.394866: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:27.395069: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:43:27.395248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:44:36.512403: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:44:36.512713: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:44:36.512767: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:44:36.512973: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:44:36.513149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:44:36.513174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:44:36.513180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:44:36.513185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:44:36.513237: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:44:36.513433: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:44:36.513606: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
+2021-05-21 17:45:09.739812: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:45:09.740215: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:2d:00.0 name: NVIDIA GeForce RTX 2060 SUPER computeCapability: 7.5
+coreClock: 1.665GHz coreCount: 34 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-05-21 17:45:09.740306: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:45:09.740634: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:45:09.740908: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-05-21 17:45:09.740946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 17:45:09.740957: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-05-21 17:45:09.740966: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-05-21 17:45:09.741058: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:45:09.741371: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-05-21 17:45:09.741645: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6528 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060 SUPER, pci bus id: 0000:2d:00.0, compute capability: 7.5)
