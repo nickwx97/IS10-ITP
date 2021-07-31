@@ -9,7 +9,9 @@ It contains results, reference implementations, configuration and setup guides.
 	 - Original reference implementations pulled from various GitHubs and NVIDIA.
  - [results](results/)
 	 - Results from our experiments.
+ - [documents](documents/)
+	 - Spreadsheets created with results + Reports + Poster.
  - [fan-scripts](fan-scripts/)
-	 - Shell scripts that controls the GPU fans for one of our setups
+	 - Shell scripts that controls the GPU fans for one of our setups.
  - [misc](misc/)
-	 - Miscellaneous files that we referenced to in our report. 
+	 - Miscellaneous files that we referenced to in our report + personal setup results. 
